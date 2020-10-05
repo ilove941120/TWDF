@@ -1,0 +1,411 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+header {
+  /* ------------------------------導覽列---------------------------------------- */
+  /* ------搜尋區塊-- */
+}
+
+header .navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #55c9e9;
+  position: relative;
+}
+
+header .navbar .TWDFLogo {
+  margin: 10px;
+  position: absolute;
+}
+
+header .navbar .NavBtns {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .NavBtns .NavBtn {
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+header .navbar .LogIn {
+  width: 116px;
+  height: 64px;
+  background-color: #fcd383;
+  text-align: center;
+  line-height: 64px;
+  cursor: pointer;
+  text-decoration: unset;
+  margin-right: 50px;
+}
+
+header .Searchbox {
+  width: 100%;
+  height: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .Searchbox .Searchingbar {
+  width: 546px;
+  height: 42px;
+  color: white;
+  border: 3px solid black;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+header .Searchbox .Searchingbar .SearchingLogo {
+  position: absolute;
+  right: 10px;
+}
+
+header .Searchbox .Hashtags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .Searchbox .Hashtags .tag {
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  font-size: xx-small;
+  text-align: center;
+  background-color: #bdc8d5;
+  margin-right: 12px;
+}
+
+/* ------------------------------主要內容區塊----------------------------------- */
+main .content {
+  width: 1140px;
+  height: 3000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* ---------------------分頁標題-------------------------- */
+  /* ------------------主要內容左邊區塊----------------------- */
+  /* ------------------主要內容中間區塊----------------------- */
+  /* ------------------主要內容右邊區塊----------------------- */
+}
+
+main .content .ForumTitle {
+  width: 100%;
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 5px solid black;
+}
+
+main .content .ForumTitle h1 {
+  color: black;
+  font-weight: 200;
+}
+
+main .content .content-l {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* ------主題區塊-- */
+}
+
+main .content .content-l .content-l-box {
+  width: 166px;
+  height: 388px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  margin-top: 75px;
+  /* ------我要發問----- */
+  /* ------主題盒子----- */
+}
+
+main .content .content-l .content-l-box .QuestionBtn {
+  width: 126px;
+  height: 36px;
+  line-height: 36px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+main .content .content-l .content-l-box .QuestionCategory {
+  text-align: center;
+}
+
+main .content .content-l .content-l-box .QuestionCategory .QuestionTab {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  color: white;
+}
+
+main .content .content-l .content-l-box .QuestionCategory .Active {
+  width: 118px;
+  border-bottom: 1px solid white;
+}
+
+main .content .content-m {
+  width: 65%;
+  height: 100%;
+  /* ------主要內容區塊-- */
+}
+
+main .content .content-m .Mainbox {
+  width: 100%;
+  height: 90%;
+  margin-top: 27px;
+  /* ------分頁按鈕列-- */
+}
+
+main .content .content-m .Mainbox .case-group {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .content-m .Mainbox .case-group .casebox {
+  width: 743px;
+  height: 102px;
+  border: 1px solid #cbcbcb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .WhoseCase {
+  margin-top: 4px;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 26px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .WhoseCase .Headshot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #cbcbcb;
+  margin-left: 21px;
+  margin-right: 8px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .WhoseCase .Name {
+  width: 180px;
+  background-color: #cbcbcb;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .WhoseCase .Checkbox {
+  width: 12px;
+  height: 12px;
+  background-color: #cbcbcb;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .WhoseCase .Views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 22px;
+  margin-right: 16px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .WhoseCase .Answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .CaseTitle {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #cbcbcb;
+  margin-left: 14px;
+  margin-bottom: 10px;
+  padding: 0 16px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .CaseTags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 14px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseL-Content .CaseTags .Tag {
+  height: 16px;
+  line-height: 16px;
+  display: inline-block;
+  font-size: xx-small;
+  background-color: #cbcbcb;
+  border-radius: 4px;
+  padding: 0 9px;
+  margin-right: 3px;
+}
+
+main .content .content-m .Mainbox .case-group .casebox .CaseR-IMG {
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+main .content .content-r {
+  width: 20%;
+  background-color: #3a3a3a;
+  /* ------側邊盒子區塊-- */
+}
+
+main .content .content-r .content-r-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* ------發布按鈕-- */
+  /* ------發布區塊-- */
+}
+
+main .content .content-r .content-r-box .QuestionLeaseBtn {
+  width: 164px;
+  height: 58px;
+  background-color: #3a3a3a;
+  color: white;
+  text-align: center;
+  line-height: 58px;
+  font-size: 29pt;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+main .content .content-r .content-r-box .Releasebox {
+  margin-left: 10px;
+  /* ------側邊盒子-- */
+}
+
+main .content .content-r .content-r-box .Releasebox .ReleaseboxTitle {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 18pt;
+}
+
+main .content .content-r .content-r-box .Releasebox .ReleaseboxeEach .ReleaseEachTitle {
+  color: white;
+}
+
+main .content .content-r .content-r-box .Releasebox .ReleaseboxeEach .ReleaseEachDetails {
+  font-size: x-small;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ------------------------------頁角-------------------------------------- */
+footer .footer {
+  width: 100%;
+  height: 300px;
+  background-color: #e71531;
+}
+
+/* --------------------------注意事項------------------------------------ */
+/* 高度只是暫定可以自行更動 */
+/* 區塊背景顏色方便辨識 */
+/* 側邊盒子區塊 (content-r-box) 挑整高度,可以改變盒子內間距 */
+/* 側邊盒子 xxx可以命名,記得要在創造它的Class */
+/*# sourceMappingURL=TWDF.css.map */

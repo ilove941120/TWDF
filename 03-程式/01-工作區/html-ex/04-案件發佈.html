@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        /* ------------------------------導覽列---------------------------------------- */
+
+        .navbar {
+            width: 100%;
+            height: 70px;
+            background-color: blueviolet;
+        }
+
+        /* ------------------------------主要內容區塊----------------------------------- */
+
+
+        .content {
+            width: 1170px;
+            height: 3000px;
+            background-color: burlywood;
+            margin: auto;
+            display: flex;
+        }
+
+
+        /* ------------------主要內容左邊區塊----------------------- */
+
+
+
+        .content-l {
+            width: 80%;
+            height: 100%;
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /* ------搜尋區塊-- */
+        .Searchbox {
+
+            width: 100%;
+            height: 300px;
+            background-color: black;
+        }
+
+        /* ------分頁按鈕列-- */
+        .Paginationbox {
+
+            width: 100%;
+            height: 30px;
+            background-color: rgb(36, 170, 211);
+        }
+
+        /* ------主要內容區塊-- */
+        .Mainbox {
+
+            width: 100%;
+            height: 2640px;
+            background-color: rgb(209, 209, 245);
+        }
+
+
+        /* ------------------主要內容右邊區塊----------------------- */
+
+        .content-r {
+            width: 20%;
+            height: 100%;
+            background-color: rgb(220, 230, 248);
+        }
+
+        /* ------側邊盒子區塊-- */
+        .content-r-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        /* ------發布區塊-- */
+        .Releasebox {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(236, 187, 112);
+        }
+
+        /* ------側邊盒子-- */
+        .xxxbox {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(228, 135, 154);
+        }
+
+
+        /* ------------------------------頁角-------------------------------------- */
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(231, 21, 49);
+        }
+
+        /* --------------------------注意事項------------------------------------ */
+        /* 高度只是暫定可以自行更動 */
+        /* 區塊背景顏色方便辨識 */
+        /* 側邊盒子區塊挑整高度,可以改變盒子內間距 */
+        /* 側邊盒子 xxx可以命名,記得要在創造它的Class */
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ---------------------導覽列----------------------- -->
+    <div class="navbar"></div>
+    <!-- ---------------------內容----------------------- -->
+
+    <div class="content">
+        <div class="content-l">
+            <div class="Searchbox">searchbox</div>
+            <div class="Paginationbox">Paginationbox</div>
+            <div class="Mainbox">
+                <!-- 案件列表單 -->
+          
+
+
+                    <div class="case_published_container d-flex m-3 flex-md-wrap">
+                        <div class="card border-0 col-md-2">
+                            <img src="https://picsum.photos/100?random=1" class="card-img-top rounded-circle p-3"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">...</p>
+                            </div>
+                        </div>
+                        <div class="card border-0 col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">WORDPRESS 網站程式碼優化以及商品頁面排版</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">個人暱稱-帳號</h6>
+                                <p class="card-text overflow-hidden" style="height: 8em">
+                                    1.案件說明：目前需求WORDPRESS網站程式碼優化，以便提升速度，以及網站商品頁面的排版設計優化
+                                    2.參考範例網址：https://www.vincentsworld.com.tw/SalePage/Index/6582379 3.注意事項：細節詳談                                
+                                </p>
+                                <span>2天前更新</span> 
+                            </div>
+                        </div>
+                        <div class="card border-0 col-md-3">
+                            <div class="card-body">
+                                <h6 class="card-text">瀏覽人數:</h6>
+                                <h6 class="card-text">報價人數:</h6>
+                                <p></p>
+                                <h6 class="card-text">預算金額:5K~10K</h6>
+                                <h6 class="card-text">發佈時間</h6>
+                                <h6 class="card-text">結案期限:</h6>
+                                <p></p>
+                                <div class="button_group">
+                                    <button>儲存</button>
+                                    <button>追蹤</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+              
+
+            </div>
+            <div class="Paginationbox"></div>
+
+
+
+
+
+
+        </div>
+        <div class="content-r">
+            <div class="content-r-box">
+
+                <div class="Releasebox">
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <H3 class="text-center">案件金額TOP</H3>
+                        <div class="p-2 bd-highlight">Flex item 1</div>
+                        <div class="p-2 bd-highlight">Flex item 2</div>
+                        <div class="p-2 bd-highlight">Flex item 3</div>
+                      </div>
+                </div>
+                <div class="xxxbox"></div>
+                <div class="xxxbox"></div>
+                <div class="xxxbox"></div>
+                <div class="xxxbox"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ---------------------頁角----------------------- -->
+
+    <div class="footer"></div>
+
+
+
+    <!-- ---------------------CDN----------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

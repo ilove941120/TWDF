@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        /* ------------------------------導覽列---------------------------------------- */
+
+        .navbar {
+            width: 100%;
+            height: 70px;
+            background-color: blueviolet;
+        }
+
+        /* ------------------------------主要內容區塊----------------------------------- */
+
+
+        .content {
+            width: 1140px;
+            height: 1000px;
+            background-color: burlywood;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sign-in-box {
+            width: 1140px;
+            height: 500px;
+            background-color: black;
+        }
+
+
+        /* ------------------主要內容區塊----------------------- */
+        .mainbox {
+            width: 100%;
+            height: 90%;
+            background-color: rgb(209, 209, 245);
+            display: flex;
+        }
+
+        /* ------滾動主題區區塊列-- */
+        .mainbox-l {
+            width: 20%;
+            height: 100%;
+            background-color: rgb(85, 85, 243);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .title {
+            width: 80%;
+            height: 15%;
+            background-color: aqua;
+            margin: auto;
+        }
+
+        .title-l {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        /* ------主題區區塊內容列-- */
+        .mainbox-r {
+            width: 80%;
+            height: 100%;
+            background-color: rgb(243, 85, 106);
+        }
+
+
+        /* ------------------------------頁角-------------------------------------- */
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(231, 21, 49);
+        }
+
+
+        /* --------------------------注意事項------------------------------------ */
+        /* 高度只是暫定可以自行更動 */
+        /* 區塊背景顏色方便辨識 */
+        /* 側邊盒子區塊 (content-r-box) 挑整高度,可以改變盒子內間距 */
+        /* 側邊盒子 xxx可以命名,記得要在創造它的Class */
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ---------------------導覽列----------------------- -->
+    <div class="navbar"></div>
+    <!-- ---------------------內容----------------------- -->
+
+    <div class="content">
+        <div class="sign-in-box"></div>
+        <div class="mainbox">
+            <div class="mainbox-l">
+                <div class="title row align-items-center ">
+                    <div class="title-l col-3 ">
+                        <img src="05-pic/book.png " height=40 width=40>
+                    </div>
+                    <div class="title-r col-9 font-weight-bold"><span>學院電子書</hr>Books</span></div>
+                </div>
+
+
+
+
+
+
+                <div class="title row align-items-center ">
+                    <div class="title-l col-3 ">
+                        <img src="05-pic/setting.png " height=40 width=40>
+                    </div>
+                    <div class="title-r col-9 font-weight-bold"><span>工具套件 </hr>Tools</span></div>
+
+                </div>
+                
+                
+                
+                <div class="title row align-items-center ">
+                    <div class="title-l col-3">
+                        <img src="05-pic/video-player.png " height=40 width=40>
+                    </div>
+                    <div class="title-r col-9 font-weight-bold"><span>相關學習視頻</hr>Videos</span></div>
+
+                </div>
+                
+                
+                <div class="title row align-items-center ">
+                    <div class="title-l col-3">
+                        <img src="05-pic/conversation.png" height=40 width=40>
+                    </div>
+                    <div class="title-r col-9 font-weight-bold">其他論壇</hr>Other Forums</span></div>
+                </div>
+
+
+                <div class="title row align-items-center ">
+                    <div class="title-l col-3">
+                        <img src="05-pic/information.png " height=40 width=40>
+                    </div>
+
+                    <div class="title-r col-9 font-weight-bold">其他資源</hr> Others Infor.</span></div>
+                </div>
+            </div>
+            <div class="mainbox-r"></div>
+        </div>
+    </div>
+
+    </div>
+    <!-- ---------------------頁角----------------------- -->
+
+    <div class="footer"></div>
+
+
+
+    <!-- ---------------------CDN----------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
