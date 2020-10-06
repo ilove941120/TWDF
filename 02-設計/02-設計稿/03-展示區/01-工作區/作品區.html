@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        /* ---------------------導覽列----------------------- */
+        .navbar {
+            width: 100%;
+            height: 70px;
+            background-color: blueviolet;
+        }
+
+        /* --------------主要內容------------------ */
+        .content {
+            width: 1170px;
+            height: 3000px;
+            background-color: burlywood;
+            margin: auto;
+        }
+
+        /* ------搜尋區塊------- */
+        .Searchbox {
+
+            width: 100%;
+            height: 10%;
+            background-color: black;
+        }
+
+        /* ------發布區塊------- */
+        .Releasebox {
+            width: 100%;
+            height: 8%;
+            background-color: rgb(168, 233, 245);
+            margin-bottom: 20px;
+            display: flex;
+            float: left;
+
+        }
+
+        #post {
+            width: 25%;
+            height: 100%;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+
+
+
+        }
+
+        #show {
+            width: 35%;
+            height: 100%;
+            background-color: red;
+
+        }
+
+        #content {
+            width: 40%;
+            height: 100%;
+            background-color: rgb(166, 178, 180);
+            padding: 40px;
+        }
+
+        #poster {
+            width: 60%;
+            height: 60%;
+            background-image: url(./show/發布作品左圖.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+
+
+        }
+
+        #shower {
+            width: 70%;
+            height: 100%;
+            background-image: url(./show/發布作品右圖.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        /* ------內容區塊-------- */
+        .Mainbox {
+
+            width: 100%;
+            height: 80%;
+            background-color: rgb(241, 167, 167);
+        }
+
+        /* --分頁按鈕列-- */
+        .Paginationbox {
+
+            width: 100%;
+            height: 30px;
+            /* background-color: rgb(75, 45, 0); */
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .Paginationbox-small {
+            font-size: 24px;
+        }
+
+
+        /* --案件區塊-- */
+        .case-group {
+            width: 100%;
+            height: calc(100% - 60px);
+            background-color: rgb(75, 81, 170);
+            display: flex;
+            float: left;
+        }
+
+        /* 發布的圖片卡 */
+        .case {
+            width: 100%;
+            height: 450px;
+            background-color: white;
+
+        }
+
+        /* 作品圖片 */
+        .work{
+            width: 100%;
+            height: 60%;
+            background-color: rgb(166, 178, 180);
+            background-image: url(./show/aa0aff7573bc945addafb05d42b13fa2.jpg);
+            background-size: cover;
+        }
+        /* 作者列 */
+        .worker{
+            width: 100%;
+            height: 15%;
+            background-color: rgb(168, 233, 245);
+        }
+        .comment{
+            width: 100%;
+            height: 8%;
+            background-color: rgb(103, 187, 82);
+        }
+        .people{
+            width: 100%;
+            height: 7%;
+            background-color: rgb(55, 23, 107);
+        }
+        .date{
+            width: 100%;
+            height: 7%;
+            background-color: rgb(78, 124, 133);
+        }
+
+        .tag-group{
+            width: 100%;
+            height: 5%;
+            background-color: rgb(177, 164, 105);
+        }
+        /* ---------------------頁角----------------------- */
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(231, 21, 49);
+        }
+
+        /* ---------------------注意事項----------------------- */
+        /* 高度寬度都只是暫定可以自行更動 */
+        /* 區塊背景顏色方便辨識 */
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ---------------------導覽列----------------------- -->
+    <div class="navbar"></div>
+    <!-- ---------------------內容----------------------- -->
+
+    <div class="content">
+        <div class="Searchbox"></div>
+        <div class="Releasebox">
+            <div id="post">
+                <div id="poster"></div>
+            </div>
+            <div id="content">
+                <h3>Design Creative</h3>
+                <p>Create anything you can imagine with computure,</p>
+                <p>the world’s best imaging and design.</p>
+                <button>start</button>
+            </div>
+            <div id="show">
+                <div id="shower"></div>
+            </div>
+        </div>
+
+        <div class="Mainbox">
+            <h2 style="text-align: center;">作品展示區</h2>
+            <div class="Paginationbox">
+                <div class="Paginationbox-small">最新上傳</div>
+                <div class="Paginationbox-small">最多點評</div>
+                <div class="Paginationbox-small">最高人氣</div>
+            </div>
+            <hr class="my-1">
+            <div class="case-group">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="case  text-center py-2 ">
+                                <div class="work"></div>
+                                <div class="worker">
+                                    <div class="headshot"></div>
+                                    <div class="name"></div>
+                                </div>
+                                <div class="comment"></div>
+                                <div class="people"></div>
+                                <div class="date"></div>
+                                <div class="tag-group">
+                                    <div id="tagicon"></div>
+                                    <div class="tag"></div>
+                                    <div class="tag"></div>
+                                    <div class="tag"></div>
+                                    <div class="tag"></div>
+                                    <div class="tag"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="case text-center py-2 ">
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="case text-center py-2 ">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Paginationbox"></div>
+
+        </div>
+
+
+    </div>
+    <!-- ---------------------頁角----------------------- -->
+
+    <div class="footer"></div>
+
+
+
+    <!-- ---------------------CDN----------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
