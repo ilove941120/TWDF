@@ -319,6 +319,7 @@ main{
                         font-size: 18pt;
                     }
                     .ReleaseboxeEach{
+                        margin-bottom: 14px;
                         
                         .ReleaseEachTitle{
                             color: white;
@@ -333,6 +334,28 @@ main{
                             }
                         }
                     }
+                }
+                /* ------達人榜-- */
+                .Masterlist{
+                    margin-left: 10px;
+                    /* ------達人-- */
+                    .MasterlistTitle {
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        color: white;
+                        font-size: 18pt;
+                    }
+                    .MasterlistEach{
+                        margin-bottom: 14px;
+
+                        .MasterHeadshot{
+                            width: 33px;
+                            height: 33px;
+                            border-radius: 50%;
+                            background-color: yellowgreen;
+                        }
+                    }    
                 }
             }
         }

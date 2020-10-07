@@ -356,6 +356,7 @@ main .content .content-r .content-r-box {
           flex-direction: column;
   /* ------發布按鈕-- */
   /* ------發布區塊-- */
+  /* ------達人榜-- */
 }
 
 main .content .content-r .content-r-box .QuestionLeaseBtn {
@@ -384,6 +385,10 @@ main .content .content-r .content-r-box .Releasebox .ReleaseboxTitle {
   font-size: 18pt;
 }
 
+main .content .content-r .content-r-box .Releasebox .ReleaseboxeEach {
+  margin-bottom: 14px;
+}
+
 main .content .content-r .content-r-box .Releasebox .ReleaseboxeEach .ReleaseEachTitle {
   color: white;
 }
@@ -394,6 +399,34 @@ main .content .content-r .content-r-box .Releasebox .ReleaseboxeEach .ReleaseEac
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main .content .content-r .content-r-box .Releasebox .ReleaseboxeEach .ReleaseEachDetails .ReleaseEachAnswers {
+  margin-right: 13px;
+}
+
+main .content .content-r .content-r-box .Masterlist {
+  margin-left: 10px;
+  /* ------達人-- */
+}
+
+main .content .content-r .content-r-box .Masterlist .MasterlistTitle {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 18pt;
+}
+
+main .content .content-r .content-r-box .Masterlist .MasterlistEach {
+  margin-bottom: 14px;
+}
+
+main .content .content-r .content-r-box .Masterlist .MasterlistEach .MasterHeadshot {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: yellowgreen;
 }
 
 /* ------------------------------頁角-------------------------------------- */
