@@ -490,7 +490,7 @@ main .Section4 .Section4Background .ToBeAPartOfTWDF .ToBeAPartStep {
 
 main .Section4 .Section4Background .ToBeAPartOfTWDF .ToBeAPartStep .ToBeAPartStepBackLine {
   width: 12px;
-  height: calc(100% - 115px);
+  height: calc(100% - 13%);
   background-color: rgba(102, 132, 163, 0.5);
   margin-left: 168px;
   position: absolute;
