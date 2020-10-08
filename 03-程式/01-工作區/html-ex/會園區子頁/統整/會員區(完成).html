@@ -31,8 +31,8 @@
 
         .content {
             width: 1140px;
-            /* height: calc(100vh - 90px); */
-            background-color: burlywood;
+            height: auto;
+            background-color: cornflowerblue;
             margin: auto;
             display: flex;
         }
@@ -45,7 +45,7 @@
         .content-l {
             width: 20%;
             height: 1000px;
-            background-color: cornflowerblue;
+            /* background-color: cornflowerblue; */
             display: flex;
             flex-direction: column;
             /* justify-content: center; */
@@ -55,6 +55,7 @@
         .personalbox {
             width: 80%;
             height: 20%;
+            padding-top: 10PX;
             /* background-color: black; */
             display: flex;
             flex-direction: column;
@@ -67,6 +68,10 @@
             border-radius: 50%;
             background-color: rgb(84, 60, 218);
             margin: auto;
+            background-image: url(/03-程式/01-工作區/html-ex/會園區子頁/統整/png/會員頭像.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .namebox {
@@ -86,6 +91,7 @@
             background-color: rgb(228, 212, 212);
             display: flex;
             flex-direction: column;
+            margin-top: 10PX;
             box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
             /* flex-wrap: wrap; */
             /* justify-content: space-around; */
@@ -115,6 +121,7 @@
         .content-r {
             width: 80%;
             height: auto;
+            padding-bottom: 20px;
             background-color: rgb(220, 230, 248);
             /* display: flex;
             flex-direction: column; */
@@ -123,31 +130,55 @@
 
         .project-page {
             width: 100%;
-            height: 100%;
-            background-color: rgb(163, 184, 163);
+            /* height: calc(100% - 20px); */
+            /* background-color: rgb(163, 184, 163); */
             display: none;
         }
 
         .banner {
             width: 90%;
-            height: 40%;
-            background-color: darkkhaki;
+            height: 400px;
+            /* background-color: darkkhaki; */
             margin: auto;
+            margin-top: 20px;
             position: relative;
+            
             box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+
 
         }
 
         .ba-photo {
             width: 100%;
-            height: 50%;
+            height: 60%;
             background-color: rgb(33, 44, 13);
+            background-image: url(/03-程式/01-工作區/html-ex/會園區子頁/統整/png/會員封面.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .introduction {
             width: 100%;
             height: 50%;
-            background-color: rgb(152, 189, 89);
+            /* background-color: rgb(152, 189, 89); */
+
+            position: relative;
+        }
+
+        .in_text_main {
+            width: 95%;
+            height: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+            position: absolute;
+            top: 20%;
+            left: 1%;
         }
 
         .ps-photo {
@@ -157,7 +188,11 @@
             background-color: deeppink;
             position: absolute;
             top: 30%;
-            left: 10%;
+            left: 5%;
+            background-image: url(/03-程式/01-工作區/html-ex/會園區子頁/統整/png/會員頭像.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
 
@@ -300,7 +335,7 @@
                 <div class="namebox">賴小明</div>
             </div>
             <div class="listbox">
-                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/06-會員區.html">
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/會員區(完成).html">
                     個人資料
                 </a>
                 <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/我的作品(完成).html">
@@ -312,14 +347,12 @@
                 <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/我的任務(完成).html">
                     我的任務
                 </a>
-                
-                
-                
-                
-                <div class="projectbox">喜歡的作品</div>
-                <div class="projectbox">追蹤中的帳號</div>
-                <div class="projectbox">關注的討論</div>
-                <div class="projectbox">任務接洽</div>
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/喜歡的作品(完成).html">
+                    喜歡的作品
+                </a>
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整//追蹤的帳號(完成).html">
+                    追蹤中的帳號
+                </a>
             </div>
 
         </div>
@@ -327,7 +360,11 @@
             <div class="project-page active_pj_pages">
                 <div class="banner">
                     <div class="ba-photo"></div>
-                    <div class="introduction"></div>
+                    <div class="introduction">
+                        <div class="in_text_main">
+                            吳若權（1962年1月28日－）台灣作家、主持人，也是企業行銷顧問,畢業於政大企業管理學系。曾任IBM行政專員、HP惠普公司企劃專員、飛碟唱片董事長特別助理、東元行銷經理、微軟行銷經理。
+                        </div>
+                    </div>
                     <div class="ps-photo"></div>
                 </div>
                 <div class="shillbox">
@@ -353,19 +390,27 @@
                         <h3>經歷</h3>
                     </div>
                     <div class="ex-content">
-                        吳若權（1962年1月28日－）台灣作家、主持人，也是企業行銷顧問,畢業於政大企業管理學系。曾任IBM行政專員、HP惠普公司企劃專員、飛碟唱片董事長特別助理、東元行銷經理、微軟行銷經理。
+                       資深廣告業務 May 2017 ~ July 2018
+                       <br>  品酷廣告股份有限公司
+                       <br>  工作內容：與兩人小組共同完成12個廣告專案，創造約2,500萬營業額、協助廣告專案統籌與進度控管、客戶溝通與協調、監督活動執行及問題解決、專案預算控管
+
+                       <br>  負責客戶：台灣迪士尼、飛躍文創、南山人壽、MeMe直播、ASUS Taiwan、ORIS Taiwan、Honda Taiwan
+
+                       <br>  ★ 2017 冰雪奇緣嘉年華
+
+                       <br>  ・與美國迪士尼動畫團隊合作，100%還原電影場景
+
+                       <br>  ・45天觀展人次100萬，是一般主題肖像展4~5倍﹐追加移展至韓國，受邀擔任施工指導
+
+                       <br>  Experiences 00 02@2x
+                       <br>  廣告業務 Sept 2015 ~ May 2017
+                       <br>  九井廣告股份有限公司
+                       <br>  工作內容：協助活動團隊完成廣告專案，主要負責客戶溝通與聯繫、行銷物規劃與發包製作、協助活動執行與支援
+
+                       <br>  負責客戶：台灣迪士尼、野獸國、LINE Taiwan、ASUS Taiwan
                     </div>
                 </div>
             </div>
-            <div class="project-page bg-red"></div>
-            <div class="project-page bg-blue"></div>
-            <div class="project-page bg-red"></div>
-            <div class="project-page bg-blue"></div>
-            <div class="project-page bg-red"></div>
-            <div class="project-page bg-blue"></div>
-            <div class="project-page bg-red"></div>
-
-
         </div>
 
     </div>
@@ -374,38 +419,7 @@
     <div class="footer"></div>
 
 
-    <script>
-        // 模組化 <- 將功能變成零件 當有需要時可以直接放入使用,不需要重頭來過
 
-        var projectboxs = document.querySelectorAll('.projectbox') //nodelist(節點集合)
-        var pj_pages = document.querySelectorAll('.project-page') //nodelist(節點集合)
-
-        // 點擊按鈕時,先把所有的active移除,再給被點擊的按鈕加上active的class ,同時給"相對應索引值"的content也加上active的class
-
-        for (var i = 0; i < projectboxs.length; i++) {
-            // 處理nodelist的最好方法是將其轉化 此處的區域變數宣告是轉化nodelist的資料為正式的HTML標籤
-            const projectbox = projectboxs[i];
-            const pj_page = pj_pages[i]
-
-            projectbox.onclick = function () {
-                remove_active_pj_pages()
-
-                projectbox.classList.add('active_pj_pages');
-                pj_page.classList.add('active_pj_pages');
-            }
-        }
-
-        function remove_active_pj_pages() {
-            for (var i = 0; i < projectboxs.length; i++) {
-                const projectbox = projectboxs[i];
-                const pj_page = pj_pages[i]
-
-                projectbox.classList.remove('active_pj_pages')
-                pj_page.classList.remove('active_pj_pages')
-            }
-        }
-
-    </script>
     <!-- ---------------------CDN----------------------- -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

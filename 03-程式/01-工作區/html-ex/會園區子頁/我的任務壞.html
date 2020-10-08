@@ -172,44 +172,9 @@
             /* background-color: crimson; */
         }
 
-        .page-button {
-            width: 100%;
-            height: 60px;
-            /* padding-top: 20px; */
-            /* background-color: brown; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
+        
 
-        .pagebox {
-            width: 30px;
-            height: 30px;
-            margin: 10px;
-            /* background-color: blueviolet; */
-            border: 3px solid black;
-            /* color: white; */
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .pageboxD {
-            width: 30px;
-            height: 30px;
-            margin: 10px;
-            /* background-color: blueviolet; */
-            border: 3px solid black;
-            /* color: white; */
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .page {
+        .TK_page {
             width: 100%;
             display: none;
 
@@ -224,22 +189,6 @@
             justify-content: center;
 
 
-        }
-
-        .wordscar {
-            width: 30%;
-            height: 300px;
-            background-color: yellow;
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
-            margin: 10px;
-        }
-        .wordscarB {
-            width: 30%;
-            height: 300px;
-            background-color: rgb(102, 207, 76);
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
-
-            margin: 10px;
         }
 
         .taskcarA{
@@ -472,19 +421,57 @@
 
 
         /* --------設定------- */
-        .activepage {
+        .page-button {
+            width: 100%;
+            height: 60px;
+            /* padding-top: 20px; */
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .TK_pagebox_t {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            /* background-color: blueviolet; */
+            border: 3px solid black;
+            /* color: white; */
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .TK_pagebox_d {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+            /* background-color: blueviolet; */
+            border: 3px solid black;
+            /* color: white; */
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .TK_activepage {
             display: block;
         }
 
-        .pagebox.activepage {
-            /* background-color: rgb(214, 30, 30); */
+        .TK_pagebox_t.TK_activepage {
+            background-color: rgb(214, 30, 30);
             display: flex;
             justify-content: center;
             align-items: center;
 
         }
-        .pageboxD.activepage {
-            /* background-color: rgb(214, 30, 30); */
+        .TK_pagebox_d.TK_activepage {
+            background-color: rgb(214, 30, 30);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -593,125 +580,12 @@
                     </div>
                 </div>
                 <div class="page-button">
-                    <div class="pagebox">1</div>
-                    <div class="pagebox">2</div>
-                    <div class="pagebox">3</div>
+                    <div class="TK_pagebox_t">1</div>
+                    <div class="TK_pagebox_t">2</div>
+                    <div class="TK_pagebox_t">3</div>
                 </div>
-                <div class="page activepage">
+                <div class="TK_page TK_activepage">
                     <div class="taskcar-g ">
-                        <div class="taskcarA">
-                            <div class="tk-l">
-                                <div class="tk-title">
-                                    <h2>協助網站建置</h2>
-                                </div>
-                                <div class="tk-bar">
-                                    <div class="ps-photo"></div>
-                                    <div class="ps-name">賴小明ilove123456</div>
-                                    <div class="tk-category">前端</div>
-                                </div>
-                                <div class="tk-label">
-                                    <div class="labelbox">#css</div>
-                                    <div class="labelbox">#Jacescript</div>
-                                    <div class="labelbox">#前端</div>
-                                    <div class="labelbox">#滾輪</div>
-                                </div>
-                                <div class="tk-main">
-                                   <br>1.案件說明：協助網站建置
-                                   <br>2.注意事項：
-                                   <br>(一)具備相關能力或實務經驗
-                                   <br>(二)若有作品集可以提供我方參考佳
-                                   <br>.....點擊查看更多
-                                   </div>
-                            </div>
-                            <div class="tk-r">
-                                <div class="tk-see">瀏覽人數:30</div>
-                                <div class="tk-money">預算金額<br>5K~10K</div>
-                                <div class="tk-day">發布日期<br>2020/10/19</div>
-                                <div class="tk-endday">截直日期 <br> 2020/10/31</div>
-                                <div class="tk-buttombar">
-                                    <div class="tk-favorites">收藏</div>
-                                    <div class="takeit">接案</div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="taskcarA">
-                            <div class="tk-l">
-                                <div class="tk-title">
-                                    <h2>協助網站建置</h2>
-                                </div>
-                                <div class="tk-bar">
-                                    <div class="ps-photo"></div>
-                                    <div class="ps-name">賴小明ilove123456</div>
-                                    <div class="tk-category">前端</div>
-                                </div>
-                                <div class="tk-label">
-                                    <div class="labelbox">#css</div>
-                                    <div class="labelbox">#Jacescript</div>
-                                    <div class="labelbox">#前端</div>
-                                    <div class="labelbox">#滾輪</div>
-                                </div>
-                                <div class="tk-main">
-                                   <br>1.案件說明：協助網站建置
-                                   <br>2.注意事項：
-                                   <br>(一)具備相關能力或實務經驗
-                                   <br>(二)若有作品集可以提供我方參考佳
-                                   <br>.....點擊查看更多
-                                   </div>
-                            </div>
-                            <div class="tk-r">
-                                <div class="tk-see">瀏覽人數:30</div>
-                                <div class="tk-money">預算金額<br>5K~10K</div>
-                                <div class="tk-day">發布日期<br>2020/10/19</div>
-                                <div class="tk-endday">截直日期 <br> 2020/10/31</div>
-                                <div class="tk-buttombar">
-                                    <div class="tk-favorites">收藏</div>
-                                    <div class="takeit">接案</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="page ">
-                    <div class="taskcar-g ">
-                        <div class="taskcarB">
-                            <div class="tk-l">
-                                <div class="tk-title">
-                                    <h2>協助網站建置</h2>
-                                </div>
-                                <div class="tk-bar">
-                                    <div class="ps-photo"></div>
-                                    <div class="ps-name">賴小明ilove123456</div>
-                                    <div class="tk-category">前端</div>
-                                </div>
-                                <div class="tk-label">
-                                    <div class="labelbox">#css</div>
-                                    <div class="labelbox">#Jacescript</div>
-                                    <div class="labelbox">#前端</div>
-                                    <div class="labelbox">#滾輪</div>
-                                </div>
-                                <div class="tk-main">
-                                   <br>1.案件說明：協助網站建置
-                                   <br>2.注意事項：
-                                   <br>(一)具備相關能力或實務經驗
-                                   <br>(二)若有作品集可以提供我方參考佳
-                                   <br>.....點擊查看更多
-                                   </div>
-                            </div>
-                            <div class="tk-r">
-                                <div class="tk-see">瀏覽人數:30</div>
-                                <div class="tk-money">預算金額<br>5K~10K</div>
-                                <div class="tk-day">發布日期<br>2020/10/19</div>
-                                <div class="tk-endday">截直日期 <br> 2020/10/31</div>
-                                <div class="tk-buttombar">
-                                    <div class="tk-favorites">收藏</div>
-                                    <div class="takeit">接案</div>
-                                </div>
-
-                            </div>
-                        </div>
                         <div class="taskcarB">
                             <div class="tk-l">
                                 <div class="tk-title">
@@ -751,7 +625,7 @@
                     </div>
                 </div>
 
-                <div class="page ">
+                <div class="TK_page ">
                     <div class="taskcar-g ">
                         <div class="taskcarC">
                             <div class="tk-l">
@@ -792,11 +666,15 @@
                     </div>
                 </div>
 
+                <div class="TK_page">
+                    
+                </div>
+
 
                 <div class="page-button">
-                    <div class="pageboxD" onclick="page(1)">1</div>
-                    <div class="pageboxD">2</div>
-                    <div class="pageboxD">3</div>
+                    <div class="TK_pagebox_d" onclick="page(1)">1</div>
+                    <div class="TK_pagebox_d">2</div>
+                    <div class="TK_pagebox_d">3</div>
                 </div>
             </div>
 
@@ -815,72 +693,61 @@
 
     <!-- ----------------------javescript------------------- -->
     <script>
-        // 模組化 <- 將功能變成零件 當有需要時可以直接放入使用,不需要重頭來過
 
-        var pageboxs = document.querySelectorAll('.pagebox') //nodelist(節點集合)
-        var pages = document.querySelectorAll('.page') //nodelist(節點集合)
-
+        var Tk_pb_ts = document.querySelectorAll('.Tk_pagebox_t') 
+        // var TK_pages = document.querySelectorAll('.TK_page')
 
 
-        // 點擊按鈕時,先把所有的active移除,再給被點擊的按鈕加上active的class ,同時給"相對應索引值"的page也加上active的class
+        for (var i = 0; i < Tk_pb_ts.length; i++) {
 
-        for (var i = 0; i < pageboxs.length; i++) {
-            // 處理nodelist的最好方法是將其轉化 此處的區域變數宣告是轉化nodelist的資料為正式的HTML標籤
-            const pagebox = pageboxs[i];
-            const page = pages[i];
+            const Tk_pb_t = Tk_pb_ts[i];
+            // const TK_page = TK_pages[i];
 
-            pagebox.onclick = function () {
-                remove_activepage()
+            Tk_pb_t.onclick = function () {
+                remove_TK_activepage()
 
-                pagebox.classList.add('activepage')
-                page.classList.add('activepage')
+                Tk_pb_t.classList.add('TK_activepage')
+                // TK_page.classList.add('TK_activepage')
             }
         }
 
-        function remove_activepage() {
-            for (var i = 0; i < pageboxs.length; i++) {
-                const pagebox = pageboxs[i];
-                const page = pages[i];
+        function remove_TK_activepage() {
+            for (var i = 0; i < Tk_pb_ts.length; i++) {
+                const Tk_pagebox_t = Tk_pb_ts[i];
+                // const TK_page = TK_pages[i];
 
-                console.log(pages, page);
-
-                pagebox.classList.remove('activepage')
-                page.classList.remove('activepage')
+                Tk_pagebox_t.classList.remove('TK_activepage')
+                // TK_page.classList.remove('TK_activepage')
             }
         }
 
     </script>
 
     <script>
-        // 模組化 <- 將功能變成零件 當有需要時可以直接放入使用,不需要重頭來過
-
-        var pageboxDs = document.querySelectorAll('.pageboxD') //nodelist(節點集合)
-        var pages = document.querySelectorAll('.page') //nodelist(節點集合)
 
 
+        var Tk_pb_ds = document.querySelectorAll('.Tk_pagebox_d') 
+        // var TK_pages = document.querySelectorAll('.TK_page')
 
-        // 點擊按鈕時,先把所有的active移除,再給被點擊的按鈕加上active的class ,同時給"相對應索引值"的page也加上active的class
+        for (var i = 0; i < Tk_pb_ds .length; i++) {
+            const Tk_pb_d = Tk_pb_ds[i];
+            // const TK_page = TK_pages[i];
 
-        for (var i = 0; i < pageboxDs.length; i++) {
-            // 處理nodelist的最好方法是將其轉化 此處的區域變數宣告是轉化nodelist的資料為正式的HTML標籤
-            const pageboxD = pageboxDs[i];
-            const page = pages[i];
+            Tk_pb_d.onclick = function () {
+                remove_TK_activepage()
 
-            pageboxD.onclick = function () {
-                remove_activepageB()
-
-                pageboxD.classList.add('activepage')
-                page.classList.add('activepage')
+                Tk_pb_d.classList.add('TK_activepage')
+                // TK_page.classList.add('TK_activepage')
             }
         }
 
-        function remove_activepageB() {
-            for (var i = 0; i < pageboxDs.length; i++) {
-                const pageboxD = pageboxDs[i];
-                const page = pages[i];
+        function remove_TK_activepage() {
+            for (var i = 0; i < Tk_pb_ds .length; i++) {
+                const Tk_pb_d = Tk_pb_ds [i];
+                // const TK_page = TK_pages[i];
 
-                pageboxD.classList.remove('activepage')
-                page.classList.remove('activepage')
+                Tk_pb_d.classList.remove('TK_activepage')
+                // TK_page.classList.remove('TK_activepage')
             }
         }
 
