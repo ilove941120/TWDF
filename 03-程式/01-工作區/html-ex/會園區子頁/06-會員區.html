@@ -31,8 +31,8 @@
 
         .content {
             width: 1140px;
-            /* height: calc(100vh - 140px); */
-            background-color: cornflowerblue;
+            height: calc(100vh - 90px);
+            background-color: burlywood;
             margin: auto;
             display: flex;
         }
@@ -44,7 +44,7 @@
 
         .content-l {
             width: 20%;
-            height: 1000px;
+            height: 100%;
             background-color: cornflowerblue;
             display: flex;
             flex-direction: column;
@@ -55,7 +55,6 @@
         .personalbox {
             width: 80%;
             height: 20%;
-            padding-top: 10PX;
             /* background-color: black; */
             display: flex;
             flex-direction: column;
@@ -87,7 +86,6 @@
             background-color: rgb(228, 212, 212);
             display: flex;
             flex-direction: column;
-            margin-top: 10PX;
             box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
             /* flex-wrap: wrap; */
             /* justify-content: space-around; */
@@ -117,7 +115,7 @@
         .content-r {
             width: 80%;
             height: 100%;
-            background-color: rgb(211, 250, 221);
+            background-color: rgb(220, 230, 248);
             /* display: flex;
             flex-direction: column; */
 
@@ -126,7 +124,114 @@
         .project-page {
             width: 100%;
             height: 100%;
-            /* background-color: rgb(50, 206, 50); */
+            background-color: rgb(163, 184, 163);
+            display: none;
+        }
+
+        /* -------------個人檔案區-------------------------- */
+
+        .banner {
+            width: 90%;
+            height: 40%;
+            background-color: darkkhaki;
+            margin: auto;
+            position: relative;
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+
+        }
+
+        .ba-photo {
+            width: 100%;
+            height: 50%;
+            background-color: rgb(33, 44, 13);
+        }
+
+        .introduction {
+            width: 100%;
+            height: 50%;
+            background-color: rgb(152, 189, 89);
+        }
+
+        .ps-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: deeppink;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+
+
+        .shillbox {
+            width: 90%;
+            height: auto;
+            padding: 10px 0px;
+            /* background-color: rgb(211, 63, 13); */
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .sk-title {
+            /* background-color: yellow; */
+            width: 95%;
+            margin: 10px;
+
+        }
+
+
+
+        .sk-content {
+            width: 95%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+
+        }
+
+
+        .skill {
+            background-color: teal;
+            color: white;
+            display: inline;
+            margin: 10px;
+            padding: 0 10px;
+            font-size: 18px;
+            box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.5);
+
+        }
+
+
+
+        .experiencebox {
+            width: 90%;
+            height: auto;
+            /* background-color: rgb(226, 165, 145); */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ex-content {
+            width: 95%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+
+
         }
 
         /* ------------------------作品區--------------------------------- */
@@ -246,6 +351,9 @@
 
 
 
+
+
+
         /* ------側邊盒子區塊-- */
 
 
@@ -254,13 +362,27 @@
         /* ------------------------------頁角-------------------------------------- */
         .footer {
             width: 100%;
-            height: 90px;
+            height: 300px;
             background-color: rgb(231, 21, 49);
         }
 
 
 
-        /* --------設定------- */
+        /* --------開關顯示---- */
+
+        .active_pj_pages {
+            display: block;
+        }
+
+        .projectbox.active_pj_pages {
+            background-color: rgb(17, 17, 16);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
         .activepage {
             display: block;
         }
@@ -318,7 +440,7 @@
                 <div class="namebox">賴小明</div>
             </div>
             <div class="listbox">
-                <div class="projectbox">個人檔案</div>
+                <div class="projectbox active_pj_pages">個人檔案</div>
                 <div class="projectbox">我的做品</div>
                 <div class="projectbox">我的討論</div>
                 <div class="projectbox">我的任務</div>
@@ -330,7 +452,43 @@
 
         </div>
         <div class="content-r">
-            <div class="project-page">
+            <div class="project-page active_pj_pages">
+                <div class="banner">
+                    <div class="ba-photo"></div>
+                    <div class="introduction"></div>
+                    <div class="ps-photo"></div>
+                </div>
+                <div class="shillbox">
+                    <div class="sk-title">
+                        <h3>技能</h3>
+                    </div>
+                    <div class="sk-content">
+
+                        <div class="skill">CSS</div>
+                        <div class="skill">JaveScipt</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JaveScipt</div>
+                        <div class="skill">JaveScipt</div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="experiencebox">
+                    <div class="sk-title">
+                        <h3>經歷</h3>
+                    </div>
+                    <div class="ex-content">
+                        吳若權（1962年1月28日－）台灣作家、主持人，也是企業行銷顧問,畢業於政大企業管理學系。曾任IBM行政專員、HP惠普公司企劃專員、飛碟唱片董事長特別助理、東元行銷經理、微軟行銷經理。
+                    </div>
+                </div>
+            </div>
+            <div class="project-page bg-red"></div>
+            <div class="project-page bg-blue"></div>
+            <div class="project-page bg-red"></div>
+            <div class="project-page ">
                 <div class="page-title">
                     <h1>喜歡的作品</h1>
                 </div>
@@ -415,6 +573,10 @@
                     <div class="pageboxD">3</div>
                 </div>
             </div>
+            <div class="project-page bg-red"></div>
+            <div class="project-page bg-blue"></div>
+            <div class="project-page bg-red"></div>
+
 
         </div>
 
@@ -423,24 +585,40 @@
 
     <div class="footer"></div>
 
+    <!-- ---------------------列表切換----------------------- -->
+    <script>
+        var projectboxs = document.querySelectorAll('.projectbox') 
+        var pj_pages = document.querySelectorAll('.project-page') 
+        for (var i = 0; i < projectboxs.length; i++) {
+            const projectbox = projectboxs[i];
+            const pj_page = pj_pages[i]
 
+            projectbox.onclick = function () {
+                remove_active_pj_pages()
 
+                projectbox.classList.add('active_pj_pages');
+                pj_page.classList.add('active_pj_pages');
+            }
+        }
+        function remove_active_pj_pages() {
+            for (var i = 0; i < projectboxs.length; i++) {
+                const projectbox = projectboxs[i];
+                const pj_page = pj_pages[i]
 
-
-
-
-    <!-- ----------------------javescript------------------- -->
+                projectbox.classList.remove('active_pj_pages')
+                pj_page.classList.remove('active_pj_pages')
+            }
+        }
+    </script>
 
      <!-- -----------------喜歡的作品--------------------------- -->
 
-    <script>
+     <script>
         
         // -------------------頁面按鈕上-------------------------
 
         var pageboxs = document.querySelectorAll('.pagebox') 
         var pages = document.querySelectorAll('.page') 
-
-
 
         for (var i = 0; i < pageboxs.length; i++) {
 
@@ -497,7 +675,6 @@
         }
 
     </script>
-
     <!-- ---------------------CDN----------------------- -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
