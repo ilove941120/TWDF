@@ -191,7 +191,8 @@
             width: 30px;
             height: 30px;
             margin: 10px;
-            /* background-color: blueviolet; */
+            border-radius: 40%;
+            background-color: rgb(249, 244, 255);
             border: 3px solid black;
             /* color: white; */
             font-size: 18px;
@@ -204,7 +205,8 @@
             width: 30px;
             height: 30px;
             margin: 10px;
-            /* background-color: blueviolet; */
+            border-radius: 40%;
+            background-color: rgb(249, 244, 255);
             border: 3px solid black;
             /* color: white; */
             font-size: 18px;
@@ -219,7 +221,7 @@
 
         }
 
-        .taskcar-g {
+        .track_car-g {
             width: 100%;
             /* height: 70%; */
             /* background-color: rgb(156, 247, 186); */
@@ -230,238 +232,162 @@
 
         }
 
-        .wordscar {
-            width: 30%;
-            height: 300px;
-            background-color: yellow;
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
-            margin: 10px;
-        }
-        .wordscarB {
-            width: 30%;
-            height: 300px;
-            background-color: rgb(102, 207, 76);
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
-
-            margin: 10px;
-        }
-
-        .taskcarA{
+        .track_carA{
             width: 90%;
-            height: 400px;
-            background-color: rgb(29, 182, 187);
+            height: auto;
+            border: 10px solid white;
+            background-color: rgba(229, 253, 226, 0.5);
             box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
             margin: 10px;
             display: flex;
+            /* justify-content: space-between; */
             justify-content: space-around;
-            align-items: center;
             
         }
 
-        .taskcarB{
+        .track_carB{
             width: 90%;
-            height: 400px;
-            background-color: rgb(163, 187, 29);
+            height: auto;
+            background-color: rgb(146, 201, 247);
             box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
             margin: 10px;
             display: flex;
+            /* justify-content: space-between; */
             justify-content: space-around;
-            align-items: center;
         }
-        .taskcarC{
+        .track_carC{
             width: 90%;
-            height: 400px;
-            background-color: rgb(230, 159, 192);
+            height: auto;
+            background-color: rgb(253, 242, 159);
             box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
             margin: 10px;
             display: flex;
+            /* justify-content: space-between; */
             justify-content: space-around;
-            align-items: center;
         }
 
+        /* --------------卡片左--------------- */
         .tk-l{
-            width: 70%;
-            height: 90%;
-            background-color: rgb(225, 241, 241);
-            
-        }
-
-        .tk-title{
-            width: 95%;
-            height: 20%;
-            margin-left: 10px;
-            /* background-color: rgb(252, 255, 248); */
+            /* width: 20%; */
+            /* height: 80%; */
+            /* background-color: crimson; */
             display: flex;
-            /* justify-content: center; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
             align-items: center;
+            /* font-size: 18px; */
         }
+        /* ----------卡片左內容---- */
 
-        .tk-bar{
-            width: 100%;
-            height: 15%;
-            /* background-color: darkgray; */
-            display: flex;
-            align-items: center;
-        }
-        .ps-photo{
-            width: 40px;
-            height: 40px;
+        .tk_photo{
+            width: 100px;
+            height: 100px;
+            /* margin-top: 10px;    */
             border-radius: 50%;
             background-color: black;
-            margin: 10px;
-        }
-        .ps-name{
-            width: 150px;
-            height: 30px;
-            margin-left: 10px;
-            border-radius: 5px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .tk-time{
-            width: 100px;
-            height: 30px;
-            border-radius: 5px;
-            margin-left: 10px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
+
+        /* -----卡片右--------------- */
+
         
-        .tk-love{
-            width: 70px;
-            height: 30px;
-            border-radius: 5px;
-            margin-left: 10px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .tk-category{
-            width: 70px;
-            height: 30px;
-            border-radius: 5px;
-            margin-left: 10px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .tk-label{
-            width: 100%;
-            height: 15%;
-            /* background-color: rgb(252, 165, 165); */
-            display: flex;
-            /* justify-content: center; */
-            align-items: center;
-        }
-        .labelbox{
-            background-color: teal;
-            color: white;
-            display: inline;
-            margin: 10px;
-            padding: 0 10px;
-            font-size: 18px;
-            box-shadow: 2px 2px 1px rgba(20%,20%,40%,0.5);
-        }
         .tk-r{
-            width: 25%;
-            height: 90%;
-            background-color: crimson;
+            width: 70%;
+            /* height: 80%; */
+            /* background-color: rgb(225, 241, 241); */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tk-r h3{
+            letter-spacing: 4px;
+            margin-left: 4px;
+            margin-top: 10px;
+            font-weight: bolder;
+            color: rgb(0, 97, 0);
+
+        }
+
+        .tk_profession{
+            /* height: auto; */
+            /* height: 20%; */
+            /* background-color: rgb(219, 73, 73); */
+            display: flex;
+            align-items: center;
+        }
+        .prf_text{
+            width: 100%;
+            /* display: inline; */
+            font-size: 18px;
+            letter-spacing: 2px;
+            padding: 0px 10px;
+            margin:  4px;
+            background-color: rgba(204, 255, 221, 0.5);
+            box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.5);
+        }
+
+        .tk_skill-g{
+            /* width: 80%;
+            height: 10%; */
+            /* display: inline; */
+            margin: 4px 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
+
+            /* background-color: brown; */
         }
 
-        .tk-see{
-            width: 80%;
-            height: 30px;
-            border-radius: 5px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tk-money{
-            width: 80%;
-            height: 50px;
-            border-radius: 5px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tk-day{
-            width: 80%;
-            height: 50px;
-            border-radius: 5px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tk-endday{
-            width: 80%;
-            height: 50px;
-            border-radius: 5px;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .tk-buttombar{
-            width: 80%;
-            height: 50px;
-            border-radius: 5px;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        .tk-favorites{
-            width: 40%;
-            height: 30px;
-            border-radius: 5px;
-            background-color: rgb(255, 175, 175);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .takeit{
-            width: 40%;
-            height: 30px;
-            border-radius: 5px;
-            background-color: rgb(223, 88, 88);
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-
-        .tk-main{
-            width: 100%;
-            height: 50%;
+        .skill {
+            background-color: rgba(67, 97, 61, 0.5);
+            color: white;
+            display: inline;
+            margin: 4px;
             padding: 0 10px;
-            font-size: 18px;
-            border-top: 2px solid black ;
-            background-color: rgb(255, 255, 255);
+            font-size: 14px;
+            box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.5);
+
+        }
+
+        
+        .tk_information{
+            background-color: rgba(245, 255, 247, 0.5);
+            font-size: 14px;
+            letter-spacing: 2px;
+            padding: 10px 8px;
+            margin:  0 4px;
+            box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.5);
+        }
+
+        
+
+        .tk_seemore{
+            width: 98%;
+            margin: auto;
+            /* background-color: chartreuse; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bt_seemore{
+            width: 120px;
+            margin: 10px 0;
+            height: 30px;
+            color: white;
+            background-color: rgb(0, 63, 14);
+            box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
 
+        /* ----------卡片右內容---- */
 
-        /* ------側邊盒子區塊-- */
+
+
+
+
 
 
 
@@ -476,6 +402,12 @@
 
 
         /* --------設定------- */
+
+        .tk_car_photo{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
         .activepage {
             display: block;
         }
@@ -510,6 +442,11 @@
         .bg-yellow {
             background-color: yellow;
         }
+
+
+        /* ------------------套件------- */
+
+        
 
         /* --------------------------注意事項------------------------------------ */
         /* 高度只是暫定可以自行更動 */
@@ -565,34 +502,289 @@
                     <div class="pagebox">3</div>
                 </div>
                 <div class="page activepage">
-                    <div class="taskcar-g ">
-                        <div class="taskcarA">
+                    <div class="track_car-g ">
+                        <div class="track_carA">
                             <div class="tk-l">
-                               
+                               <div class="tk_photo">
+                                   <img class="tk_car_photo" src="https://5b0988e595225.cdn.sohucs.com/images/20191104/54ebb7dae9c34b15ab8322a2560044c8.jpeg"  alt="">
+                               </div>
                             </div>
                             <div class="tk-r">
-                                
-
+                                <div class="tk_name"><h3>TSENG YUTING</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        UI/UX DesignerDesigner@Freelancer2020 ~ 現在
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">JaveScipt</div>
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">JaveScipt</div>
+                                </div>
+                                <div class="tk_information">
+                                    您好我是TSENG YUTING，台南人
+                                        <br> 擁有約2年的 UI / UX設計經歷，也擁有經營社群、電商網站的營運經驗。
+                                        我喜歡收集、觀察與探究人事時物的成因。 目前正在經營台灣人導向的日本郵趣Facebook專頁，介紹圖案多樣的日本郵戳與其背後的故事。
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="track_carA">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                <img class="tk_car_photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq-yAp8BYRoXObUQ4rkwZ7lwQSSHPNpX384w&usqp=CAU"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>黃宇禎</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        Software Engineer / Backend Engineer行政助理@臺北市家庭教育中心2019 ~ 2019
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">    
+                                    <div class="skill">Coding</div>
+                                    <div class="skill">Web Development</div>
+                                    <div class="skill">JaveScipt</div>
+                                    <div class="skill">Node.js/Express.js</div>
+                                    <div class="skill">Bootstrap</div>
+                                    <div class="skill">Handlebars.js</div>
+                                    <div class="skill">Git</div>
+                                </div>
+                                <div class="tk_information">
+                                    過往學經歷偏學術與教育領域，但也對資訊科技很有興趣，除曾經修習課程與企業實習，更熱衷應用於工作與生活，獲得更多便利與樂趣。由於曾錯過進入科技領域的機遇，近年便以轉職後端/全端工程師為目標，掌握產品開發的核心知識與技術能力後捲土重來，如今已能參與協作或是獨立進行完整專案，並結合既有研究精神與學習特質，長於掌握觀念重點、查找解決問題與紀錄反思過程，期許未來能『「網」產品開發的道「路」跨出下一步』。
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="track_carA">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                <img class="tk_car_photo" src="https://5b0988e595225.cdn.sohucs.com/images/20190505/4d4b03810a75447dbc04393eeeacab09.jpeg"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>林品翰</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        Front-end Developer前端工程師@潔克幫股份有限公司2020 ~ 現在
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">    
+                                    <div class="skill">vue.js</div>
+                                    <div class="skill">vuex</div>
+                                    <div class="skill">vre-router</div>
+                                    <div class="skill">scss/sass</div>
+                                    <div class="skill">Bootstrap</div>
+                                    <div class="skill">jQuery</div>
+                                    <div class="skill">Flexbox</div>
+                                </div>
+                                <div class="tk_information">
+                                    林品翰 現任工作為 潔客幫 的前端工程師，主要負責公司網站的開發及維護。 前端框架使用 Vue.js 框架，熟悉 Vue-Router 做路由管理及切換、使用 Vuex 統一狀態管理也熟悉 Nuxt.js框架處理伺服器渲染（SSR）。 目前除了持續精進前端技術外，也學習後端技能 Node.js、MongoDB，希望能夠與自己前端的學習接軌以及整合。 Front-end Developer T...
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="page ">
-                    <div class="taskcar-g ">
-                        
+                <div class="page">
+                    <div class="track_car-g ">
+                        <div class="track_carB">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                   <img class="tk_car_photo" src="https://5b0988e595225.cdn.sohucs.com/images/20191104/54ebb7dae9c34b15ab8322a2560044c8.jpeg"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>TSENG YUTING</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        UI/UX DesignerDesigner@Freelancer2020 ~ 現在
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">JaveScipt</div>
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">JaveScipt</div>
+                                </div>
+                                <div class="tk_information">
+                                    您好我是TSENG YUTING，台南人
+                                        <br> 擁有約2年的 UI / UX設計經歷，也擁有經營社群、電商網站的營運經驗。
+                                        我喜歡收集、觀察與探究人事時物的成因。 目前正在經營台灣人導向的日本郵趣Facebook專頁，介紹圖案多樣的日本郵戳與其背後的故事。
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="track_carA">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                <img class="tk_car_photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq-yAp8BYRoXObUQ4rkwZ7lwQSSHPNpX384w&usqp=CAU"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>黃宇禎</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        Software Engineer / Backend Engineer行政助理@臺北市家庭教育中心2019 ~ 2019
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">    
+                                    <div class="skill">Coding</div>
+                                    <div class="skill">Web Development</div>
+                                    <div class="skill">JaveScipt</div>
+                                    <div class="skill">Node.js/Express.js</div>
+                                    <div class="skill">Bootstrap</div>
+                                    <div class="skill">Handlebars.js</div>
+                                    <div class="skill">Git</div>
+                                </div>
+                                <div class="tk_information">
+                                    過往學經歷偏學術與教育領域，但也對資訊科技很有興趣，除曾經修習課程與企業實習，更熱衷應用於工作與生活，獲得更多便利與樂趣。由於曾錯過進入科技領域的機遇，近年便以轉職後端/全端工程師為目標，掌握產品開發的核心知識與技術能力後捲土重來，如今已能參與協作或是獨立進行完整專案，並結合既有研究精神與學習特質，長於掌握觀念重點、查找解決問題與紀錄反思過程，期許未來能『「網」產品開發的道「路」跨出下一步』。
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="track_carA">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                <img class="tk_car_photo" src="https://5b0988e595225.cdn.sohucs.com/images/20190505/4d4b03810a75447dbc04393eeeacab09.jpeg"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>林品翰</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        Front-end Developer前端工程師@潔克幫股份有限公司2020 ~ 現在
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">    
+                                    <div class="skill">vue.js</div>
+                                    <div class="skill">vuex</div>
+                                    <div class="skill">vre-router</div>
+                                    <div class="skill">scss/sass</div>
+                                    <div class="skill">Bootstrap</div>
+                                    <div class="skill">jQuery</div>
+                                    <div class="skill">Flexbox</div>
+                                </div>
+                                <div class="tk_information">
+                                    林品翰 現任工作為 潔客幫 的前端工程師，主要負責公司網站的開發及維護。 前端框架使用 Vue.js 框架，熟悉 Vue-Router 做路由管理及切換、使用 Vuex 統一狀態管理也熟悉 Nuxt.js框架處理伺服器渲染（SSR）。 目前除了持續精進前端技術外，也學習後端技能 Node.js、MongoDB，希望能夠與自己前端的學習接軌以及整合。 Front-end Developer T...
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="page ">
-                    <div class="taskcar-g ">
-                        
+                <div class="page">
+                    <div class="track_car-g ">
+                        <div class="track_carC">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                   <img class="tk_car_photo" src="https://5b0988e595225.cdn.sohucs.com/images/20191104/54ebb7dae9c34b15ab8322a2560044c8.jpeg"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>TSENG YUTING</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        UI/UX DesignerDesigner@Freelancer2020 ~ 現在
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">JaveScipt</div>
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">CSS</div>
+                                    <div class="skill">JaveScipt</div>
+                                </div>
+                                <div class="tk_information">
+                                    您好我是TSENG YUTING，台南人
+                                        <br> 擁有約2年的 UI / UX設計經歷，也擁有經營社群、電商網站的營運經驗。
+                                        我喜歡收集、觀察與探究人事時物的成因。 目前正在經營台灣人導向的日本郵趣Facebook專頁，介紹圖案多樣的日本郵戳與其背後的故事。
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="track_carA">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                <img class="tk_car_photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq-yAp8BYRoXObUQ4rkwZ7lwQSSHPNpX384w&usqp=CAU"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>黃宇禎</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        Software Engineer / Backend Engineer行政助理@臺北市家庭教育中心2019 ~ 2019
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">    
+                                    <div class="skill">Coding</div>
+                                    <div class="skill">Web Development</div>
+                                    <div class="skill">JaveScipt</div>
+                                    <div class="skill">Node.js/Express.js</div>
+                                    <div class="skill">Bootstrap</div>
+                                    <div class="skill">Handlebars.js</div>
+                                    <div class="skill">Git</div>
+                                </div>
+                                <div class="tk_information">
+                                    過往學經歷偏學術與教育領域，但也對資訊科技很有興趣，除曾經修習課程與企業實習，更熱衷應用於工作與生活，獲得更多便利與樂趣。由於曾錯過進入科技領域的機遇，近年便以轉職後端/全端工程師為目標，掌握產品開發的核心知識與技術能力後捲土重來，如今已能參與協作或是獨立進行完整專案，並結合既有研究精神與學習特質，長於掌握觀念重點、查找解決問題與紀錄反思過程，期許未來能『「網」產品開發的道「路」跨出下一步』。
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="track_carA">
+                            <div class="tk-l">
+                               <div class="tk_photo">
+                                <img class="tk_car_photo" src="https://5b0988e595225.cdn.sohucs.com/images/20190505/4d4b03810a75447dbc04393eeeacab09.jpeg"  alt="">
+                               </div>
+                            </div>
+                            <div class="tk-r">
+                                <div class="tk_name"><h3>林品翰</h3></div>
+                                <div class="tk_profession">
+                                    <div class="prf_text">
+                                        Front-end Developer前端工程師@潔克幫股份有限公司2020 ~ 現在
+                                    </div>
+                                </div>
+                                <div class="tk_skill-g">    
+                                    <div class="skill">vue.js</div>
+                                    <div class="skill">vuex</div>
+                                    <div class="skill">vre-router</div>
+                                    <div class="skill">scss/sass</div>
+                                    <div class="skill">Bootstrap</div>
+                                    <div class="skill">jQuery</div>
+                                    <div class="skill">Flexbox</div>
+                                </div>
+                                <div class="tk_information">
+                                    林品翰 現任工作為 潔客幫 的前端工程師，主要負責公司網站的開發及維護。 前端框架使用 Vue.js 框架，熟悉 Vue-Router 做路由管理及切換、使用 Vuex 統一狀態管理也熟悉 Nuxt.js框架處理伺服器渲染（SSR）。 目前除了持續精進前端技術外，也學習後端技能 Node.js、MongoDB，希望能夠與自己前端的學習接軌以及整合。 Front-end Developer T...
+                                </div>
+                                <div class="tk_seemore">
+                                    <div class="bt_seemore">觀看個人檔案</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
                 <div class="page-button">
-                    <div class="pageboxD" onclick="page(1)">1</div>
+                    <div class="pageboxD">1</div>
                     <div class="pageboxD">2</div>
                     <div class="pageboxD">3</div>
                 </div>
@@ -613,17 +805,11 @@
 
     <!-- ----------------------javescript------------------- -->
     <script>
-        // 模組化 <- 將功能變成零件 當有需要時可以直接放入使用,不需要重頭來過
 
-        var pageboxs = document.querySelectorAll('.pagebox') //nodelist(節點集合)
-        var pages = document.querySelectorAll('.page') //nodelist(節點集合)
-
-
-
-        // 點擊按鈕時,先把所有的active移除,再給被點擊的按鈕加上active的class ,同時給"相對應索引值"的page也加上active的class
+        var pageboxs = document.querySelectorAll('.pagebox') 
+        var pages = document.querySelectorAll('.page') 
 
         for (var i = 0; i < pageboxs.length; i++) {
-            // 處理nodelist的最好方法是將其轉化 此處的區域變數宣告是轉化nodelist的資料為正式的HTML標籤
             const pagebox = pageboxs[i];
             const page = pages[i];
 
