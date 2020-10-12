@@ -498,7 +498,113 @@
 
         }
 
+
+
+
+        /* -----------互動視窗表單------------------------- */
+
+        .Ad_tkform{
+            width: 100%;
+            height: 70vh;
+            background-color: cadetblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content:space-around;
+        }
+
+        .tkform_announcer{
+            width: 90%;
+            height: 70px;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+        }
+
+        .tk_an_photo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .tk_an_name{
+            display: inline;
+            /* background-color: white; */
+            font-size: 18px;
+            margin-left: 10px;
+            letter-spacing: 2px;
+        }
+
+        .tkform_title{
+            width: 90%;
+            height: 30px;
+            /* background-color: rgb(255, 112, 112); */
+            display: flex;
+            align-items: center;
+        }
+        .tK_area_name{
+            background-color: whitesmoke;
+            font-size: 18px;
+        }
+
+        .tkform_main{
+            width: 90%;
+            height: 200px;
+            /* margin: 10px 0; */
+            /* background-color: rgb(255, 203, 203); */
+        }
+
+        .tkform_button{
+            width: 90%;
+            height: 50px;
+            margin-top: 30px;
+            background-color: rgb(112, 162, 255);
+        }
+
+        .tkform_money{
+            width: 90%;
+            height: 50px;
+            margin: 10px 0;
+            background-color: rgb(152, 226, 255);
+        }
+
+        .tkform_deadtime{
+            width: 90%;
+            height: 30px;
+            margin: 10px 0;
+            /* background-color: rgb(216, 255, 152); */
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .tkform_skill{
+            width: 90%;
+            height: 50px;
+            margin: 10px 0;
+            background-color: rgb(181, 255, 152);
+        }
+
         /* --------設定------- */
+        .tk_input{
+            width: 300px;
+            border: none;
+            /* background-color: yellow; */
+            border-radius:5px ;
+            margin-left: 20px;
+        }
+        .tk_textarea{
+            width: 100%;
+            height: 100%;
+            margin-top: 5px;
+            border-radius:5px;
+
+            border: none;
+
+        }
+
+
         .bg-red {
             background-color: red;
         }
@@ -589,7 +695,7 @@
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal-dialog modal-dialog-centered " role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -598,7 +704,43 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        <div class="Ad_tkform">
+                                            <div class="tkform_announcer">
+                                                <div class="tk_an_photo"></div>
+                                                <div class="tk_an_name">賴小明allsome1221</div>
+                                            </div>
+                                            <div class="tkform_title">
+                                                <div class="tk_area_name">
+                                                    任務名稱:
+                                                </div>
+                                                <input class="tk_input" type="text">
+                                            </div>
+                                            <div class="tkform_main">
+                                                <div class="tk_area_name">
+                                                    任務描述:
+                                                </div>
+                                                <textarea class="tk_textarea" name="" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <div class="tkform_button">
+                                                
+                                            </div>
+                                            <div class="tkform_money">
+                                                <div class="tk_area_name">
+                                                    報價金額:
+                                                </div>
+                                            </div>
+                                            <div class="tkform_deadtime">
+                                                <div class="tk_area_name">
+                                                    任務期限:
+                                                </div>
+                                                <input class="tk_input" type="text">
+                                            </div>
+                                            <div class="tkform_skill">
+                                                <div class="tk_area_name">
+                                                    技能標籤:
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
