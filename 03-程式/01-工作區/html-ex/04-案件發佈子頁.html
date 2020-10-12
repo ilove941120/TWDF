@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        /* ------------------------------導覽列---------------------------------------- */
+
+        .navbar {
+            width: 100%;
+            height: 70px;
+            background-color: blueviolet;
+        }
+
+        /* ------------------------------主要內容區塊----------------------------------- */
+
+
+        .content {
+            width: 1170px;
+            height: 3000px;
+            background-color: burlywood;
+            margin: auto;
+            display: flex;
+        }
+
+
+        /* ------------------主要內容左邊區塊----------------------- */
+
+
+
+        .content-l {
+            width: 80%;
+            height: 100%;
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /* ------搜尋區塊-- */
+        .Searchbox {
+
+            width: 100%;
+            height: 200px;
+            background-color: black;
+        }
+
+        /* ------分頁按鈕列-- */
+        .Paginationbox {
+
+            width: 100%;
+            height: 50px;
+            background-color: rgb(36, 170, 211);
+        }
+
+        /* ------主要內容區塊-- */
+        .Mainbox {
+
+            width: 100%;
+            height: 2640px;
+            background-color: rgb(209, 209, 245);
+        }
+
+
+        /* ------------------主要內容右邊區塊----------------------- */
+
+        .content-r {
+            width: 20%;
+            height: 100%;
+            background-color: rgb(220, 230, 248);
+        }
+
+        /* ------側邊盒子區塊-- */
+        .content-r-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        /* ------發布區塊-- */
+        .Releasebox {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(236, 187, 112);
+        }
+
+        /* ------側邊盒子-- */
+        .xxxbox {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(228, 135, 154);
+        }
+
+
+        /* ------------------------------頁角-------------------------------------- */
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(231, 21, 49);
+        }
+
+        /* --------------------------注意事項------------------------------------ */
+        /* 高度只是暫定可以自行更動 */
+        /* 區塊背景顏色方便辨識 */
+        /* 側邊盒子區塊挑整高度,可以改變盒子內間距 */
+        /* 側邊盒子 xxx可以命名,記得要在創造它的Class */
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ---------------------導覽列----------------------- -->
+    <div class="navbar"></div>
+    <!-- ---------------------內容----------------------- -->
+
+   <main class="Mainbox">
+    <section class="container">
+        <div class="card mb-3 d-flex">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="http://placehold.it/100x100" class="" alt="...">
+              </div>
+              <div class="col-md-9">
+                  <h3 class="h-100">Wordpress 網站程式碼優化以及商品頁面排版</h3>
+              </div>
+            </div>
+          </div>
+
+        <div class="card col-6 mb-3">發佈人暱稱帳號資訊</div>
+        
+            <div class="row mb-3">
+                <div class="card col-2">2020/9/24</div>
+                <div class="card col-6 d-flex">
+                    <div class="row col-8">
+                        <span class="mx-3">#Javascript</span>
+                        <span class="mx-3">#CSS</span>
+                        <span class="mx-3">#html</span>
+                    </div>            
+                </div>
+            </div>
+         
+        <div class="row col-8">
+            <figure class=col-4> <img src="http://placehold.it/200x150" alt=""></figure>
+            <figure class=col-4> <img src="http://placehold.it/200x150" alt=""></figure>
+            <figure class=col-4> <img src="http://placehold.it/200x150" alt=""></figure>
+        </div>
+
+        <article>
+            <div class="row m-3">
+                <div class="card col-2">案件金額</div>
+                <div class="card col-3">5千～1萬</div>
+            </div>
+            <div class="row mb-3">
+                <div class="card col-2">徵求期限</div>
+                <div class="card col-3">60天 （一般任務）</div>
+            </div>
+            <div class="row mb-3">
+                <div class="card col-2">執行內容</div>
+                <div class="card col-10">
+                    <p>1.案件說明：目前需求Wordpress網站程式碼優化，以便提升速度，以及網站商品頁面的排版設計優化</p>
+                    <p>2.參考範例網址：https://www.vincentsworld.com.tw/SalePage/Index/6582379</p>
+                    <p>3.注意事項：細節</p>
+                    <p></p>
+                    <p>欲查看任務詳總內容，請先登入或免費註冊</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="card col-2">聯絡方式</div>
+                <div class="card col-3">ilive12345678@gmail.com</div>
+        </article>
+    </section>
+
+   </main>
+
+
+    <!--  -->
+                  
+
+    <!-- 案件列表單底部 -->
+               
+    <!-- ---------------------頁角----------------------- -->
+
+    <div class="footer"></div>
+
+
+
+    <!-- ---------------------CDN----------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
