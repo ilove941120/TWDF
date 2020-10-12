@@ -559,14 +559,20 @@
             height: 50px;
             margin-top: 30px;
             background-color: rgb(112, 162, 255);
+            display: flex;
+
         }
 
         .tkform_money{
             width: 90%;
-            height: 50px;
+            height: 30px;
             margin: 10px 0;
-            background-color: rgb(152, 226, 255);
+            /* background-color: rgb(152, 226, 255); */
+            display: flex;
+            align-items: center;
         }
+
+        
 
         .tkform_deadtime{
             width: 90%;
@@ -599,9 +605,16 @@
             height: 100%;
             margin-top: 5px;
             border-radius:5px;
-
             border: none;
+        }
+        .tk_select{
 
+            width: 50%;
+            height: 100%;
+            margin-top: 5px;
+            margin-left: 10px;
+            border-radius:5px;
+            border: none;
         }
 
 
@@ -725,9 +738,18 @@
                                                 
                                             </div>
                                             <div class="tkform_money">
+                                                
                                                 <div class="tk_area_name">
                                                     報價金額:
                                                 </div>
+
+                                                <select class="tk_select" name="" id="">
+                                                    <option value="">5000以下</option>
+                                                    <option value="">5000~1萬</option>
+                                                    <option value="">1萬~5萬</option>
+                                                    <option value="">5萬以上</option>
+                                                </select>
+                                                
                                             </div>
                                             <div class="tkform_deadtime">
                                                 <div class="tk_area_name">
