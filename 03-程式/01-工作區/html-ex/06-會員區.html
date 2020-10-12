@@ -31,7 +31,7 @@
 
         .content {
             width: 1140px;
-            height: calc(100vh - 90px);
+            /* height: calc(100vh - 90px); */
             background-color: burlywood;
             margin: auto;
             display: flex;
@@ -44,7 +44,7 @@
 
         .content-l {
             width: 20%;
-            height: 100%;
+            height: 1000px;
             background-color: cornflowerblue;
             display: flex;
             flex-direction: column;
@@ -86,7 +86,7 @@
             background-color: rgb(228, 212, 212);
             display: flex;
             flex-direction: column;
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
             /* flex-wrap: wrap; */
             /* justify-content: space-around; */
         }
@@ -114,7 +114,7 @@
 
         .content-r {
             width: 80%;
-            height: 100%;
+            height: auto;
             background-color: rgb(220, 230, 248);
             /* display: flex;
             flex-direction: column; */
@@ -125,6 +125,7 @@
             width: 100%;
             height: 100%;
             background-color: rgb(163, 184, 163);
+            display: none;
         }
 
         .banner {
@@ -133,7 +134,7 @@
             background-color: darkkhaki;
             margin: auto;
             position: relative;
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
 
         }
 
@@ -179,7 +180,7 @@
 
         }
 
-        
+
 
         .sk-content {
             width: 95%;
@@ -188,7 +189,7 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
 
         }
 
@@ -200,7 +201,7 @@
             margin: 10px;
             padding: 0 10px;
             font-size: 18px;
-            box-shadow: 2px 2px 1px rgba(20%,20%,40%,0.5);
+            box-shadow: 2px 2px 1px rgba(20%, 20%, 40%, 0.5);
 
         }
 
@@ -226,7 +227,7 @@
             margin: 10px;
             padding: 10px;
             font-size: 18px;
-            box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.5);
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
 
 
         }
@@ -246,6 +247,35 @@
             width: 100%;
             height: 300px;
             background-color: rgb(231, 21, 49);
+        }
+
+
+
+        /* --------開關顯示---- */
+
+        .active_pj_pages {
+            display: block;
+        }
+
+        .projectbox.active_pj_pages {
+            background-color: rgb(214, 30, 30);
+
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        .bg-yellow {
+            background-color: yellow;
         }
 
         /* --------------------------注意事項------------------------------------ */
@@ -270,10 +300,22 @@
                 <div class="namebox">賴小明</div>
             </div>
             <div class="listbox">
-                <div class="projectbox">個人檔案</div>
-                <div class="projectbox">我的做品</div>
-                <div class="projectbox">我的討論</div>
-                <div class="projectbox">我的任務</div>
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/06-會員區.html">
+                    個人資料
+                </a>
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/我的作品(完成).html">
+                    我的做品
+                </a>
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/我的討論(完成).html">
+                    我的討論
+                </a>
+                <a class="projectbox" href="/03-程式/01-工作區/html-ex/會園區子頁/統整/我的任務(完成).html">
+                    我的任務
+                </a>
+                
+                
+                
+                
                 <div class="projectbox">喜歡的作品</div>
                 <div class="projectbox">追蹤中的帳號</div>
                 <div class="projectbox">關注的討論</div>
@@ -282,7 +324,7 @@
 
         </div>
         <div class="content-r">
-            <div class="project-page">
+            <div class="project-page active_pj_pages">
                 <div class="banner">
                     <div class="ba-photo"></div>
                     <div class="introduction"></div>
@@ -293,7 +335,7 @@
                         <h3>技能</h3>
                     </div>
                     <div class="sk-content">
-                        
+
                         <div class="skill">CSS</div>
                         <div class="skill">JaveScipt</div>
                         <div class="skill">CSS</div>
@@ -315,6 +357,14 @@
                     </div>
                 </div>
             </div>
+            <div class="project-page bg-red"></div>
+            <div class="project-page bg-blue"></div>
+            <div class="project-page bg-red"></div>
+            <div class="project-page bg-blue"></div>
+            <div class="project-page bg-red"></div>
+            <div class="project-page bg-blue"></div>
+            <div class="project-page bg-red"></div>
+
 
         </div>
 
@@ -324,7 +374,38 @@
     <div class="footer"></div>
 
 
+    <script>
+        // 模組化 <- 將功能變成零件 當有需要時可以直接放入使用,不需要重頭來過
 
+        var projectboxs = document.querySelectorAll('.projectbox') //nodelist(節點集合)
+        var pj_pages = document.querySelectorAll('.project-page') //nodelist(節點集合)
+
+        // 點擊按鈕時,先把所有的active移除,再給被點擊的按鈕加上active的class ,同時給"相對應索引值"的content也加上active的class
+
+        for (var i = 0; i < projectboxs.length; i++) {
+            // 處理nodelist的最好方法是將其轉化 此處的區域變數宣告是轉化nodelist的資料為正式的HTML標籤
+            const projectbox = projectboxs[i];
+            const pj_page = pj_pages[i]
+
+            projectbox.onclick = function () {
+                remove_active_pj_pages()
+
+                projectbox.classList.add('active_pj_pages');
+                pj_page.classList.add('active_pj_pages');
+            }
+        }
+
+        function remove_active_pj_pages() {
+            for (var i = 0; i < projectboxs.length; i++) {
+                const projectbox = projectboxs[i];
+                const pj_page = pj_pages[i]
+
+                projectbox.classList.remove('active_pj_pages')
+                pj_page.classList.remove('active_pj_pages')
+            }
+        }
+
+    </script>
     <!-- ---------------------CDN----------------------- -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
