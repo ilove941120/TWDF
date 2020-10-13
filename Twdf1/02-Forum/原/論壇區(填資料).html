@@ -9,7 +9,9 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <style>
         /* ------------------- */
         .Task_page {
@@ -278,7 +280,7 @@
             /* height: 50px; */
             border-radius: 5px;
             margin-left: auto;
-            margin-right:10px ;
+            margin-right: 10px;
             /* background-color: white; */
             display: flex;
             justify-content: center;
@@ -306,7 +308,7 @@
             align-items: center;
         }
 
-    
+
 
 
         /* -------------右邊區塊-------------- */
@@ -378,11 +380,58 @@
 
         .top_five_who {
             width: 100%;
-            height: 250px;
+            height: auto;
             margin: auto;
             margin-bottom: 10px;
-            background-color: rgb(92, 128, 205);
+            background-color: rgb(229, 246, 253);
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+
+            /* border: 5px solid rgb(250, 243, 243); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
         }
+
+        .top_who_photo {
+            width: 40%;
+            height: 100px;
+            margin-top: 10px;
+            background-color: blueviolet;
+        }
+
+        .top_who_title {
+            /* background-color: burlywood; */
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-weight: bolder;
+        }
+
+        .top_who_title h4 {
+            font-weight: bolder;
+            letter-spacing: 5px;
+        }
+
+        .top_who_man_G {
+            width: 90%;
+            height: auto;
+            /* background-color: red;    */
+            /* margin-bottom: 10px; */
+        }
+
+        .top_man {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            /* color: red; */
+            /* background-color: blue; */
+        }
+
+        .navbart
+        /* --------廣告------------- */
 
         .advertising {
             width: 100%;
@@ -465,26 +514,32 @@
 
 
         /* -----------卡片--------- */
-        #A_1{
-            background: rgb(255, 255, 255);  
+        #A_1 {
+            background: rgb(255, 255, 255);
         }
-        #A_2{
-            background: rgb(255, 255, 255);  
+
+        #A_2 {
+            background: rgb(255, 255, 255);
         }
-        #A_3{
-            background: rgb(255, 255, 255);  
+
+        #A_3 {
+            background: rgb(255, 255, 255);
         }
-        #A_4{
-            background: rgb(255, 255, 255);  
+
+        #A_4 {
+            background: rgb(255, 255, 255);
         }
-        #A_5{
-            background: rgb(255, 255, 255);  
+
+        #A_5 {
+            background: rgb(255, 255, 255);
         }
-        #A_6{
-            background: rgb(255, 255, 255);  
+
+        #A_6 {
+            background: rgb(255, 255, 255);
         }
-        #A_7{
-            background: rgb(255, 255, 255);  
+
+        #A_7 {
+            background: rgb(255, 255, 255);
         }
 
         /* --------背景顏色------- */
@@ -511,6 +566,27 @@
 
         .bg-6 {
             background-color: rgb(201, 198, 194);
+        }
+
+        /* ----------顏色--------- */
+        .clr_0 {
+            color: white;
+        }
+
+        .clr_1 {
+            color: black;
+        }
+
+        .clr_2 {
+            color: blue;
+        }
+
+        .clr_3 {
+            color: orange;
+        }
+
+        .clr_4 {
+            color: red;
         }
 
 
@@ -668,10 +744,10 @@
                                     <div class="qt-see">瀏覽:6</div>
                                     <div class="qt-love">收藏:6</div>
                                     <div class="qt-time">2020/10/6</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_1" class="qt-favorites" onclick="check_A_1();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_1" class="qt-favorites" onclick="check_A_1();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -697,17 +773,17 @@
                                     <div class="qt-skill">mysql</div>
                                     <div class="qt-skill">pdo</div>
                                     <div class="qt-skill">package</div>
-                               
+
 
                                 </div>
                                 <div class="qt-bar">
                                     <div class="qt-see">瀏覽:30</div>
                                     <div class="qt-love">收藏:11</div>
                                     <div class="qt-time">2020/10/13</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_2" class="qt-favorites" onclick="check_A_2();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_2" class="qt-favorites" onclick="check_A_2();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -726,24 +802,25 @@
                                 </div>
                                 <div class="qt-title">
                                     <h4 class="style_h">
-                                        請問有前輩能分享關鍵字，關於 client 端都是 windows，但 AD / 共享 Server 想要使用 Ubuntu? 前輩都不推薦用 linux 來當 ad server
+                                        請問有前輩能分享關鍵字，關於 client 端都是 windows，但 AD / 共享 Server 想要使用 Ubuntu? 前輩都不推薦用 linux 來當
+                                        ad server
                                         請問 10 年後的今天，有所改變嗎?</h4>
                                 </div>
                                 <div class="qt-skill-G">
                                     <div class="qt-skill">windows</div>
                                     <div class="qt-skill">linux</div>
                                     <div class="qt-skill">ubuntu</div>
-                                    
+
 
                                 </div>
                                 <div class="qt-bar">
                                     <div class="qt-see">瀏覽:8</div>
                                     <div class="qt-love">收藏:3</div>
                                     <div class="qt-time">2020/10/12</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_3" class="qt-favorites" onclick="check_A_3();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_3" class="qt-favorites" onclick="check_A_3();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -766,17 +843,17 @@
                                 </div>
                                 <div class="qt-skill-G">
                                     <div class="qt-skill">#while</div>
-                                   
+
 
                                 </div>
                                 <div class="qt-bar">
                                     <div class="qt-see">瀏覽:3</div>
                                     <div class="qt-love">收藏:1</div>
                                     <div class="qt-time">2020/10/12</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_4" class="qt-favorites" onclick="check_A_4();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_4" class="qt-favorites" onclick="check_A_4();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -800,17 +877,17 @@
                                 <div class="qt-skill-G">
                                     <div class="qt-skill">golang</div>
                                     <div class="qt-skill">go</div>
-                         
+
 
                                 </div>
                                 <div class="qt-bar">
                                     <div class="qt-see">瀏覽:7</div>
                                     <div class="qt-love">收藏:0</div>
                                     <div class="qt-time">2020/10/1</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_5" class="qt-favorites" onclick="check_A_5();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_5" class="qt-favorites" onclick="check_A_5();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -844,10 +921,10 @@
                                     <div class="qt-see">瀏覽:12</div>
                                     <div class="qt-love">收藏:6</div>
                                     <div class="qt-time">2020/10/11</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_6" class="qt-favorites" onclick="check_A_6();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_6" class="qt-favorites" onclick="check_A_6();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -875,17 +952,17 @@
                                     <div class="qt-skill">滾輪</div>
                                     <div class="qt-skill">netpc</div>
                                     <div class="qt-skill">clinet server</div>
-                                
+
 
                                 </div>
                                 <div class="qt-bar">
                                     <div class="qt-see">瀏覽:9</div>
                                     <div class="qt-love">收藏:2</div>
                                     <div class="qt-time">2020/10/12</div>
-                                        <div  class="qt-buttombar">
-                                            <div id="A_7" class="qt-favorites" onclick="check_A_7();">收藏</div>
-                                            <div class="takeit">接案</div>
-                                        </div>
+                                    <div class="qt-buttombar">
+                                        <div id="A_7" class="qt-favorites" onclick="check_A_7();">收藏</div>
+                                        <div class="takeit">接案</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -948,7 +1025,36 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="top_five_who"></div>
+                        <div class="top_five_who">
+                            <div class="top_who_photo"></div>
+                            <div class="top_who_title">
+                                <h4 class="style_h">答題王</h4>
+                            </div>
+                            <div class="top_who_man_G">
+                                <div class="top_man clr_3">
+                                    <i class="fad fa-crown"></i>
+                                    japhenchen (japhenchen)
+                                </div>
+                                <div class="top_man clr_4">
+                                    <i class="fad fa-crown"></i>
+                                    japhenchen (japhenchen)
+                                </div>
+                                <div class="top_man clr_2">
+                                    <i class="fad fa-crown">
+                                    </i>
+                                    japhenchen (japhenchen)
+
+                                </div>
+                                <div class="top_man">
+                                    <i class="fad fa-crown"></i>
+                                    japhenchen (japhenchen)
+                                </div>
+                                <div class="top_man">
+                                    <i class="fad fa-crown"></i>
+                                    japhenchen (japhenchen)
+                                </div>
+                            </div>
+                        </div>
                         <div class="advertising"></div>
                         <div class="advertising"></div>
 
@@ -1026,7 +1132,7 @@
             }
         }
 
-        
+
     </script>
 
 
