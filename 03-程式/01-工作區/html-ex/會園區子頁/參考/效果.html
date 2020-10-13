@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #demo {
+            background: #000;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <div> 
-        <div id="div1" style="display:block;"> 
-         <h1>Displaying Div 1</h1> 
-        </div> 
-        <div id="div2" style="display:none;"> 
-         <h1>Displaying Div 2</h1> 
-        </div> 
-        <button type="submit" id="btnToogle">Toogle</button> 
-    </div> 
-    
-    <script> 
-    var button = document.getElementById('btnToogle'); 
-    button.onclick = function() { 
-        var div1 = document.getElementById('div1'); 
-        var div2 = document.getElementById('div2'); 
-    
-        if (div1.style.display === 'none') { 
-         div1.style.display = 'block'; 
-         div2.style.display = 'none'; 
-        } else { 
-         div1.style.display = 'none'; 
-         div2.style.display = 'block'; 
-        } 
-    }; 
-    </script> 
-    
+    <div id="demo" onclick="javascript:myFunction();"></div>
+
+
+    <script>
+        function myFunction() {
+            var e = document.getElementById("demo");
+            var c = window.getComputedStyle(e).backgroundColor;
+            if (c === "rgb(0, 0, 0)") {
+                document.getElementById("demo").style.background = "#ff77ee";
+            } else {
+                document.getElementById("demo").style.background = "#000";
+            }
+        }
+    </script>
 </body>
+
 </html>
