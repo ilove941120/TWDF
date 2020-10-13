@@ -45,11 +45,128 @@ header{
 
     /* ------------------------------導覽列---------------------------------------- */
 
+    // .navbar {
+    //     width: 100%;
+    //     height: 100px;
+    //     // position: relative;
+
+    //     .TWDFLogo{
+    //         margin: 10px;
+    //         position: absolute;
+    //     }
+        
+    //     .NavBtns{
+    //         font-weight: bolder;
+    //         position: absolute;
+    //         right: 0;
+    //         display: flex;
+    //         flex-wrap: nowrap;
+    //         align-items: center;
+
+    //         .NavBtn{
+    //             color: rgb(206, 233, 231);
+    //             text-decoration: unset;
+    //             margin-right: 50px;
+    //             display: flex;
+    //             align-items: center;
+    //             position: relative;
+                
+    //             .NavIMG{
+    //                 width: 42px;
+    //                 height: 47px;
+    //                 margin-right: 12px;
+    //             }
+    //             .NavText{
+    //                 p{
+    //                     font-size: smaller;
+    //                     font-weight: lighter;
+    //                     margin-bottom: unset;
+    //                 }
+    //                 .NavTextCh{
+    //                     margin-bottom: 4.6px;
+    //                 }
+    //             }
+
+    //             &::before{
+    //                 display: block;
+    //                 content: " ";
+    //                 width: 0%;
+    //                 height: 12px;
+    //                 position: absolute;
+    //                 z-index: 1;
+    //                 top: 59px;
+    //                 left: 50%;
+    //                 transition: width .5s ease, background-color .5s ease, left .5s ease;
+    //             }
+
+    //             &:hover::before{
+    //                 width: 100%;
+    //                 background: radial-gradient(ellipse,rgb(204 , 58, 0),rgb(45, 13, 0));
+    //                 left: 0;
+    //             }
+
+    //             &:first-child{
+                    
+    //                 animation-name: MyWOW;
+    //                 visibility: visible;
+    //                 animation-duration: 3s;
+    //                 animation-delay: 1s;
+    //                 animation-iteration-count: infinite;
+
+    //                 @keyframes MyWOW{
+    //                     0% {
+    //                         transform: scaleX(1);
+    //                     }
+    //                     75% {
+    //                         transform: scaleX(1);
+    //                     }
+    //                     82.5%{
+    //                         transform: scale3d(1.25,.75,1);
+    //                     }
+    //                     85%{
+    //                         transform: scale3d(.75,1.25,1);
+    //                     }
+    //                     87.5%{
+    //                         transform: scale3d(1.15,.85,1);
+    //                     }
+    //                     91.25%{
+    //                         transform: scale3d(.95,1.05,1);
+    //                     }
+    //                     93.75%{
+    //                         transform: scale3d(1.05,.95,1);
+    //                     }
+    //                     100%{
+    //                         transform: scaleX(1);
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     #StartBtn{
+    //         color: rgb(0, 0, 0);
+    //         font-size: 31px;
+    //         width: 128px;
+    //         height: 64px;
+    //         background: rgb(252, 211, 131);
+    //         text-align: center;
+    //         line-height: 64px;
+    //         cursor: pointer;
+    //         text-decoration: unset;
+    //         margin-right: 38px;
+    //     }
+
+    // }
+
+
+
+
+    /* ---------------------------RWD導覽列---------------------------------------- */
     .navbar {
         width: 100%;
         height: 100px;
         // position: relative;
-
+        
         .TWDFLogo{
             margin: 10px;
             position: absolute;
@@ -70,20 +187,35 @@ header{
                 display: flex;
                 align-items: center;
                 position: relative;
+                @media (max-width: 1199.98px) {
+                    margin-right: 20px;
+                }
                 
                 .NavIMG{
                     width: 42px;
                     height: 47px;
                     margin-right: 12px;
+                    @media (max-width: 1199.98px) {
+                        width: 21px;
+                        height: 23.5px;
+                        margin-right: 6px;
+                    }
                 }
                 .NavText{
                     p{
                         font-size: smaller;
                         font-weight: lighter;
                         margin-bottom: unset;
+                        @media (max-width: 1199.98px) {
+                            font-size: xx-small;
+                        }
+
                     }
                     .NavTextCh{
                         margin-bottom: 4.6px;
+                        @media (max-width: 1199.98px) {
+                            margin-bottom: 0;
+                        }
                     }
                 }
 
@@ -154,9 +286,55 @@ header{
             cursor: pointer;
             text-decoration: unset;
             margin-right: 38px;
+            @media (max-width: 1199.98px) {
+                font-size: 15px;
+                width: 64px;
+                height: 32px;
+                line-height: 32px;
+            }
         }
 
     }
+
+    /* -------------------------RWD手機導覽列-------------------------------------- */
+
+    .navbar-light{
+        @include EllipseColor;
+        position: relative;
+        color: white;
+
+        .navbar-toggler{
+            position: absolute;
+            right: 5%;
+            margin-right: 10px;
+        }
+
+        .navbar-collapse{
+            .navbar-nav{
+                display: flex;
+
+                .nav-item{
+                    width: 260px;
+
+                    .nav-link{
+                        display: flex;
+
+                        .NavIMG{
+                            margin-right: 10px;
+                        }
+                        .NavText{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* ---------------------------------------------------------------------------- */
+
+
     
 
     .banner{
@@ -437,16 +615,16 @@ main{
                         /*每個圖片各延遲X秒*/
 
                         :nth-child(1){
-                            animation-delay: 1s;    
+                            animation-delay: 1s;
                         }
                         :nth-child(2){
                             animation-delay: 2s;
                         }
                         :nth-child(3){
-                            animation-delay: 3s;               
+                            animation-delay: 3s;
                         }
                         :nth-child(4){
-                            animation-delay: 4s;               
+                            animation-delay: 4s;
                         }
                     }
                 }
@@ -484,7 +662,7 @@ main{
                     }
                 }
 
-                .TWDF-IntroStartBtn{
+                #TWDF-IntroStartBtn{
                     width: 168px;
                     height: 73px;
                     line-height: 73px;
@@ -492,10 +670,14 @@ main{
                     font-weight: bolder;
                     border: 1px solid black;
                     border-radius: 15px;
-                    background-color: rgb(246, 255, 137);
+                    background: rgb(252, 211, 131);
                     font-size: 31px;
                     text-align: center;
                     text-decoration: unset;
+                    @media (max-width: 575.98px) { 
+                        width: 168px;
+
+                     }
                 }
             }
         }
@@ -735,12 +917,12 @@ main{
                         font-size: 32px;
                     }
 
-                    .ToBeAPartGetStartBtn{
+                    #ToBeAPartGetStartBtn{
                         width: 224px;
                         height: 97px;
                         line-height: 97px;
                         color: rgb(244, 247, 249);
-                        background-color: black;
+                        background: black;
                         text-decoration: unset;
                         
                         
@@ -757,30 +939,88 @@ main{
 
 /* ------------------------------頁角-------------------------------------- */
 footer{
+    // .FooterFrame{
+    //     .FooterRow {
+    //         width: 100%;
+    //         height: 300px;
+    //         color: white;
+    //         font-size: 18px;
+    
+    //         .FooterRowL{
+    //             margin-top: 97px;
+    //             padding-left: 75px;
+
+    //             img{
+    //                 width: 66px;
+    //                 margin-left: 30px;
+    //                 margin-bottom: 10px;
+    //             }
+    //             .FooterTWDF-Title{
+    //                 margin-bottom: 9px;
+    //             }
+    //         }
+    //         .FooterRowM{
+    //             // width: 250px;
+    //             margin-top: 122px;
+    //             padding-left: 68px;
+    //         }
+    //         .FooterRowR{
+                
+    //             padding-left: 105px;
+    //             margin-top: 122px;
+
+    //         }
+    //     }
+    //     .CopyrightRow{
+    //         color: white;
+    //         margin-top: 107px;
+    //         margin-bottom: 55px;
+    //     }
+    // }
+
+    /* ------------------------------RWD頁角-------------------------------------- */
     .FooterFrame{
         .FooterRow {
             width: 100%;
             height: 300px;
             color: white;
             font-size: 18px;
+           
     
             .FooterRowL{
                 margin-top: 97px;
                 padding-left: 75px;
+                @media (max-width: 767.98px) {
+                    margin-top: 20px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
 
                 img{
                     width: 66px;
                     margin-left: 30px;
                     margin-bottom: 10px;
+                    @media (max-width: 767.98px) {
+                        margin-left: 0px;
+                    }
                 }
                 .FooterTWDF-Title{
                     margin-bottom: 9px;
+                    p{
+                        @include OratorStdSlanted;
+                    }
                 }
             }
             .FooterRowM{
                 // width: 250px;
                 margin-top: 122px;
                 padding-left: 68px;
+                @media (max-width: 767.98px) {
+                    margin-top: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
             }
             .FooterRowR{
                 
@@ -795,6 +1035,8 @@ footer{
             margin-bottom: 55px;
         }
     }
+
+
 }
 
 /* --------------------------注意事項------------------------------------ */

@@ -15,6 +15,9 @@ body {
 header {
   /*每個圖片各延遲X秒*/
   /* ------------------------------導覽列---------------------------------------- */
+  /* ---------------------------RWD導覽列---------------------------------------- */
+  /* -------------------------RWD手機導覽列-------------------------------------- */
+  /* ---------------------------------------------------------------------------- */
 }
 
 header .BackgroundIMG {
@@ -85,10 +88,24 @@ header .navbar .NavBtns .NavBtn {
   position: relative;
 }
 
+@media (max-width: 1199.98px) {
+  header .navbar .NavBtns .NavBtn {
+    margin-right: 20px;
+  }
+}
+
 header .navbar .NavBtns .NavBtn .NavIMG {
   width: 42px;
   height: 47px;
   margin-right: 12px;
+}
+
+@media (max-width: 1199.98px) {
+  header .navbar .NavBtns .NavBtn .NavIMG {
+    width: 21px;
+    height: 23.5px;
+    margin-right: 6px;
+  }
 }
 
 header .navbar .NavBtns .NavBtn .NavText p {
@@ -97,8 +114,20 @@ header .navbar .NavBtns .NavBtn .NavText p {
   margin-bottom: unset;
 }
 
+@media (max-width: 1199.98px) {
+  header .navbar .NavBtns .NavBtn .NavText p {
+    font-size: xx-small;
+  }
+}
+
 header .navbar .NavBtns .NavBtn .NavText .NavTextCh {
   margin-bottom: 4.6px;
+}
+
+@media (max-width: 1199.98px) {
+  header .navbar .NavBtns .NavBtn .NavText .NavTextCh {
+    margin-bottom: 0;
+  }
 }
 
 header .navbar .NavBtns .NavBtn::before {
@@ -213,6 +242,60 @@ header .navbar .LogIn {
   cursor: pointer;
   text-decoration: unset;
   margin-right: 38px;
+}
+
+@media (max-width: 1199.98px) {
+  header .navbar .LogIn {
+    font-size: 15px;
+    width: 64px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+header .navbar-light {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse, #002b50, #001127);
+  position: relative;
+  color: white;
+}
+
+header .navbar-light .navbar-toggler {
+  position: absolute;
+  right: 5%;
+  margin-right: 10px;
+}
+
+header .navbar-light .navbar-collapse .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar-light .navbar-collapse .navbar-nav .nav-item {
+  width: 260px;
+}
+
+header .navbar-light .navbar-collapse .navbar-nav .nav-item .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .navbar-light .navbar-collapse .navbar-nav .nav-item .nav-link .NavIMG {
+  margin-right: 10px;
+}
+
+header .navbar-light .navbar-collapse .navbar-nav .nav-item .nav-link .NavText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .banner {
@@ -532,7 +615,7 @@ main .Section1 .TWDF-Intro .TWDF-IntroStart .TWDF-IntroStartText p {
   font-size: 24px;
 }
 
-main .Section1 .TWDF-Intro .TWDF-IntroStart .TWDF-IntroStartBtn {
+main .Section1 .TWDF-Intro .TWDF-IntroStart #TWDF-IntroStartBtn {
   width: 168px;
   height: 73px;
   line-height: 73px;
@@ -540,10 +623,16 @@ main .Section1 .TWDF-Intro .TWDF-IntroStart .TWDF-IntroStartBtn {
   font-weight: bolder;
   border: 1px solid black;
   border-radius: 15px;
-  background-color: #f6ff89;
+  background: #fcd383;
   font-size: 31px;
   text-align: center;
   text-decoration: unset;
+}
+
+@media (max-width: 575.98px) {
+  main .Section1 .TWDF-Intro .TWDF-IntroStart #TWDF-IntroStartBtn {
+    width: 168px;
+  }
 }
 
 main .Section2 {
@@ -798,12 +887,12 @@ main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart .ToBeAPar
   font-size: 32px;
 }
 
-main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart .ToBeAPartGetStartBtn {
+main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart #ToBeAPartGetStartBtn {
   width: 224px;
   height: 97px;
   line-height: 97px;
   color: #f4f7f9;
-  background-color: black;
+  background: black;
   text-decoration: unset;
   font-size: 43px;
   text-align: center;
@@ -811,6 +900,10 @@ main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart .ToBeAPar
 }
 
 /* ------------------------------頁角-------------------------------------- */
+footer {
+  /* ------------------------------RWD頁角-------------------------------------- */
+}
+
 footer .FooterFrame .FooterRow {
   width: 100%;
   height: 300px;
@@ -823,19 +916,45 @@ footer .FooterFrame .FooterRow .FooterRowL {
   padding-left: 75px;
 }
 
+@media (max-width: 767.98px) {
+  footer .FooterFrame .FooterRow .FooterRowL {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 footer .FooterFrame .FooterRow .FooterRowL img {
   width: 66px;
   margin-left: 30px;
   margin-bottom: 10px;
 }
 
+@media (max-width: 767.98px) {
+  footer .FooterFrame .FooterRow .FooterRowL img {
+    margin-left: 0px;
+  }
+}
+
 footer .FooterFrame .FooterRow .FooterRowL .FooterTWDF-Title {
   margin-bottom: 9px;
+}
+
+footer .FooterFrame .FooterRow .FooterRowL .FooterTWDF-Title p {
+  font-family: 'Cantarell', sans-serif;
 }
 
 footer .FooterFrame .FooterRow .FooterRowM {
   margin-top: 122px;
   padding-left: 68px;
+}
+
+@media (max-width: 767.98px) {
+  footer .FooterFrame .FooterRow .FooterRowM {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 footer .FooterFrame .FooterRow .FooterRowR {
