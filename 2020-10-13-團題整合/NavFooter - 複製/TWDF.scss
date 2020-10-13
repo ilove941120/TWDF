@@ -9,7 +9,6 @@
 
 body {
     margin: auto;
-    @include EllipseColor;
 }
 
 // .ChangeBackgroundColor{
@@ -17,13 +16,14 @@ body {
 // }
 
 header{
+    @include EllipseColor;
 
     /* ------------------------------導覽列---------------------------------------- */
     .navbar {
         width: 100%;
         height: 100px;
         // position: relative;
-
+        
         .TWDFLogo{
             margin: 10px;
             position: absolute;
@@ -44,20 +44,35 @@ header{
                 display: flex;
                 align-items: center;
                 position: relative;
+                @media (max-width: 1199.98px) {
+                    margin-right: 20px;
+                }
                 
                 .NavIMG{
                     width: 42px;
                     height: 47px;
                     margin-right: 12px;
+                    @media (max-width: 1199.98px) {
+                        width: 21px;
+                        height: 23.5px;
+                        margin-right: 6px;
+                    }
                 }
                 .NavText{
                     p{
                         font-size: smaller;
                         font-weight: lighter;
                         margin-bottom: unset;
+                        @media (max-width: 1199.98px) {
+                            font-size: xx-small;
+                        }
+
                     }
                     .NavTextCh{
                         margin-bottom: 4.6px;
+                        @media (max-width: 1199.98px) {
+                            margin-bottom: 0;
+                        }
                     }
                 }
 
@@ -128,8 +143,51 @@ header{
             cursor: pointer;
             text-decoration: unset;
             margin-right: 38px;
+            @media (max-width: 1199.98px) {
+                font-size: 15px;
+                width: 64px;
+                height: 32px;
+                line-height: 32px;
+            }
         }
 
+    }
+
+    /* ----------------------------手機導覽列-------------------------------------- */
+
+    .navbar-light{
+        @include EllipseColor;
+        position: relative;
+        color: white;
+
+        .navbar-toggler{
+            position: absolute;
+            right: 5%;
+            margin-right: 10px;
+        }
+
+        .navbar-collapse{
+            .navbar-nav{
+                display: flex;
+
+                .nav-item{
+                    width: 260px;
+
+                    .nav-link{
+                        display: flex;
+
+                        .NavIMG{
+                            margin-right: 10px;
+                        }
+                        .NavText{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -141,20 +199,33 @@ main{
     flex-direction: column;
     align-items: center;
 
+    .PutUrThingsHere{
+        height: 360px;
+        background-color: white;
+    }
+
 }
 
 /* ------------------------------頁角-------------------------------------- */
 footer{
+    @include EllipseColor;
+
     .FooterFrame{
         .FooterRow {
             width: 100%;
             height: 300px;
             color: white;
             font-size: 18px;
+           
     
             .FooterRowL{
                 margin-top: 97px;
                 padding-left: 75px;
+                @media (max-width: 767.98px) {
+                    margin-top: 20px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
 
                 img{
                     width: 66px;
@@ -163,12 +234,21 @@ footer{
                 }
                 .FooterTWDF-Title{
                     margin-bottom: 9px;
+                    p{
+                        @include OratorStdSlanted;
+                    }
                 }
             }
             .FooterRowM{
                 // width: 250px;
                 margin-top: 122px;
                 padding-left: 68px;
+                @media (max-width: 767.98px) {
+                    margin-top: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
             }
             .FooterRowR{
                 
