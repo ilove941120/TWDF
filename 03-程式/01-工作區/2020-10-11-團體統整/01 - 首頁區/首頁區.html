@@ -351,16 +351,16 @@
                                 <!-- Animation-Background -->
                         <div class="TWDF-IntroYouCanIMGS">
                             <div class="BackgroundIMG">
-                                <img src="TWDF-Intro/Laptop1.png">
+                                <img src="">
                             </div>
                             <div class="BackgroundIMG">
-                                <img src="TWDF-Intro/Laptop2.png">
+                                <img src="">
                             </div>
                             <div class="BackgroundIMG">
-                                <img src="TWDF-Intro/Laptop3.png">
+                                <img src="">
                             </div>
                             <div class="BackgroundIMG">
-                                <img src="TWDF-Intro/Laptop4.png">
+                                <img src="">
                             </div>
                         </div>
                     </div>
@@ -662,24 +662,24 @@
     <!-- On Scroll Change IMG -->
     <script>
 
-    // var onScrollHandler = function() {
-    // var newImageUrl = document.querySelector(".TWDF-IntroIMG2");
-    // var scrollTop = document.querySelector('.TWDF-Intro').offsetTop;
-    // if (scrollTop > 200) {
-    //     newImageUrl = "TWDF-Intro/Laptop1.png"
-    // }
-    // if (scrollTop > 300) {
-    //     newImageUrl = "TWDF-Intro/Laptop2.png"
-    // }
-    // if (scrollTop > 400) {
-    //     newImageUrl = "TWDF-Intro/Laptop3.png"
-    // }
-    // if (scrollTop > 500) {
-    //     newImageUrl = "TWDF-Intro/Laptop4.png"
-    // }
-    // yourImageElement.src = newImageUrl;
-    // };
-    // object.addEventListener ("scroll", onScrollHandler);
+    var onScrollHandler = function() {
+    var newImageUrl = document.querySelector(".TWDF-IntroIMG2");
+    var scrollTop = document.querySelector('.TWDF-Intro').offsetTop;
+    if (scrollTop > 200) {
+        newImageUrl = "TWDF-Intro/Intro1.png"
+    }
+    if (scrollTop > 300) {
+        newImageUrl = "TWDF-Intro/Intro2.png"
+    }
+    if (scrollTop > 400) {
+        newImageUrl = "TWDF-Intro/Intro1.png"
+    }
+    if (scrollTop > 500) {
+        newImageUrl = "TWDF-Intro/Intro2.png"
+    }
+    yourImageElement.src = newImageUrl;
+    };
+    object.addEventListener ("scroll", onScrollHandler);
 
     </script>
 
