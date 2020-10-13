@@ -133,20 +133,11 @@
                 20%{
                     opacity: 1;
                 }
-                39%{
-                    opacity: 0;
-                }
                 40%{
                     opacity: 1;
                 }
-                59%{
-                    opacity: 0;
-                }
                 60%{
                     opacity: 1;
-                }
-                79%{
-                    opacity: 0;
                 }
                 80%{
                     opacity: 1;
@@ -351,16 +342,16 @@
                                 <!-- Animation-Background -->
                         <div class="TWDF-IntroYouCanIMGS">
                             <div class="BackgroundIMG">
-                                <img src="">
+                                <img src="/03-程式/01-工作區/2020-10-11-團體統整/01 - 首頁區/TWDF-Intro/Laptop1.png">
                             </div>
                             <div class="BackgroundIMG">
-                                <img src="">
+                                <img src="/03-程式/01-工作區/2020-10-11-團體統整/01 - 首頁區/TWDF-Intro/Laptop2.png">
                             </div>
                             <div class="BackgroundIMG">
-                                <img src="">
+                                <img src="/03-程式/01-工作區/2020-10-11-團體統整/01 - 首頁區/TWDF-Intro/Laptop3.png">
                             </div>
                             <div class="BackgroundIMG">
-                                <img src="">
+                                <img src="/03-程式/01-工作區/2020-10-11-團體統整/01 - 首頁區/TWDF-Intro/Laptop4.png">
                             </div>
                         </div>
                     </div>
@@ -386,7 +377,7 @@
                             <br>不管你是誰，讓我們一起在程式人論壇中彼此激盪成長
                         </p>
                     </div>
-                    <a class="TWDF-IntroStartBtn" href="">
+                    <a id="TWDF-IntroStartBtn" href="">
                         start
                     </a>
                 </div>
@@ -593,7 +584,7 @@
                     </div>
                     <div class="ToBeAPartGetStart d-flex flex-column align-items-center">
                         <div class="ToBeAPartGetStartText">讓我們一起成為程式人論壇的一員</div>
-                        <a class="ToBeAPartGetStartBtn" href="">start</a>
+                        <a id="ToBeAPartGetStartBtn" href="">start</a>
                     </div>
                 </div>
 
@@ -649,13 +640,54 @@
     <!-- wow.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
+    
 
     <!--Start Btn onclick change background color -->
     <script>
 
+
+            // first
         // $("#StartBtn").click(function() {
         //     $(this).addClass("ChangeBackgroundColor");
         // });
+
+
+
+
+            // second
+        // function BtnOnClickChangeBackground() { 
+        //     var btn = document.getElementById("StartBtn");
+        //     var bc = window.getComputedStyle(btn).background;
+
+        //     if (bc === "rgb(0, 0, 0)") {
+        //         document.getElementById("StartBtn").style.background = "rgb(252, 211, 131)";
+        //     } else{
+        //         document.getElementById("StartBtn").style.background = "radial-gradient(circle,rgb(102 , 29, 0),rgb(0, 0, 0))";
+        //     }
+
+        //     var c = window.getComputedStyle(btn).Color;
+        //     if (c === "rgb(0, 0, 0)") {
+        //         document.getElementById("StartBtn").style.Color = "rgb(0, 0, 0)";
+        //     } else{
+        //         document.getElementById("StartBtn").style.Color = "rgb(255, 255, 255)";
+        //     }
+        // }
+
+
+
+
+        
+            // third
+        document.getElementById('StartBtn','TWDF-IntroStartBtn','ToBeAPartGetStartBtn').onclick = changeColor;  
+
+        function changeColor() {
+            document.getElementById("StartBtn").style.color = "white";
+            document.getElementById("StartBtn").style.background = "radial-gradient(circle,rgb(102 , 29, 0),rgb(0, 0, 0))";
+            return false;
+
+        }   
+
+        
 
     </script>
 

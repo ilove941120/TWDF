@@ -143,12 +143,12 @@ header{
             }
         }
 
-        .LogIn{
-            color: black;
+        #StartBtn{
+            color: rgb(0, 0, 0);
             font-size: 31px;
             width: 128px;
             height: 64px;
-            background-color: rgb(252, 211, 131);
+            background: rgb(252, 211, 131);
             text-align: center;
             line-height: 64px;
             cursor: pointer;
@@ -437,16 +437,16 @@ main{
                         /*每個圖片各延遲X秒*/
 
                         :nth-child(1){
-                            animation-delay: 1s;    
+                            animation-delay: 1s;
                         }
                         :nth-child(2){
                             animation-delay: 2s;
                         }
                         :nth-child(3){
-                            animation-delay: 3s;               
+                            animation-delay: 3s;
                         }
                         :nth-child(4){
-                            animation-delay: 4s;               
+                            animation-delay: 4s;
                         }
                     }
                 }
@@ -484,7 +484,7 @@ main{
                     }
                 }
 
-                .TWDF-IntroStartBtn{
+                #TWDF-IntroStartBtn{
                     width: 168px;
                     height: 73px;
                     line-height: 73px;
@@ -492,7 +492,7 @@ main{
                     font-weight: bolder;
                     border: 1px solid black;
                     border-radius: 15px;
-                    background-color: rgb(246, 255, 137);
+                    background: rgb(252, 211, 131);
                     font-size: 31px;
                     text-align: center;
                     text-decoration: unset;
@@ -735,12 +735,12 @@ main{
                         font-size: 32px;
                     }
 
-                    .ToBeAPartGetStartBtn{
+                    #ToBeAPartGetStartBtn{
                         width: 224px;
                         height: 97px;
                         line-height: 97px;
                         color: rgb(244, 247, 249);
-                        background-color: black;
+                        background: black;
                         text-decoration: unset;
                         
                         

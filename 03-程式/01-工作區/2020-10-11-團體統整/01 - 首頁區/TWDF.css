@@ -202,12 +202,12 @@ header .navbar .NavBtns .NavBtn:first-child {
   }
 }
 
-header .navbar .LogIn {
+header .navbar #StartBtn {
   color: black;
   font-size: 31px;
   width: 128px;
   height: 64px;
-  background-color: #fcd383;
+  background: #fcd383;
   text-align: center;
   line-height: 64px;
   cursor: pointer;
@@ -532,7 +532,7 @@ main .Section1 .TWDF-Intro .TWDF-IntroStart .TWDF-IntroStartText p {
   font-size: 24px;
 }
 
-main .Section1 .TWDF-Intro .TWDF-IntroStart .TWDF-IntroStartBtn {
+main .Section1 .TWDF-Intro .TWDF-IntroStart #TWDF-IntroStartBtn {
   width: 168px;
   height: 73px;
   line-height: 73px;
@@ -540,7 +540,7 @@ main .Section1 .TWDF-Intro .TWDF-IntroStart .TWDF-IntroStartBtn {
   font-weight: bolder;
   border: 1px solid black;
   border-radius: 15px;
-  background-color: #f6ff89;
+  background: #fcd383;
   font-size: 31px;
   text-align: center;
   text-decoration: unset;
@@ -798,12 +798,12 @@ main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart .ToBeAPar
   font-size: 32px;
 }
 
-main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart .ToBeAPartGetStartBtn {
+main .Section3 .Section3Background .ToBeAPartOfTWDF .ToBeAPartGetStart #ToBeAPartGetStartBtn {
   width: 224px;
   height: 97px;
   line-height: 97px;
   color: #f4f7f9;
-  background-color: black;
+  background: black;
   text-decoration: unset;
   font-size: 43px;
   text-align: center;
