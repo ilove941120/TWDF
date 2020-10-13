@@ -24,7 +24,6 @@ header{
         height: 100px;
         // position: relative;
         
-
         .TWDFLogo{
             margin: 10px;
             position: absolute;
@@ -223,12 +222,9 @@ footer{
                 margin-top: 97px;
                 padding-left: 75px;
                 @media (max-width: 767.98px) {
-                    margin-top: 0;
+                    margin-top: 20px;
                     padding-left: 0;
-                    display: flex;
-                    // flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    padding-right: 0;
                 }
 
                 img{
@@ -238,6 +234,9 @@ footer{
                 }
                 .FooterTWDF-Title{
                     margin-bottom: 9px;
+                    p{
+                        @include OratorStdSlanted;
+                    }
                 }
             }
             .FooterRowM{
@@ -247,6 +246,7 @@ footer{
                 @media (max-width: 767.98px) {
                     margin-top: 0;
                     padding-left: 0;
+                    padding-right: 0;
                 }
 
             }
