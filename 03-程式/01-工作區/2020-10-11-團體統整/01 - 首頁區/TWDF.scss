@@ -496,6 +496,10 @@ main{
                     font-size: 31px;
                     text-align: center;
                     text-decoration: unset;
+                    @media (max-width: 575.98px) { 
+                        width: 168px;
+
+                     }
                 }
             }
         }

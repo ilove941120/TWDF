@@ -546,6 +546,12 @@ main .Section1 .TWDF-Intro .TWDF-IntroStart #TWDF-IntroStartBtn {
   text-decoration: unset;
 }
 
+@media (max-width: 575.98px) {
+  main .Section1 .TWDF-Intro .TWDF-IntroStart #TWDF-IntroStartBtn {
+    width: 168px;
+  }
+}
+
 main .Section2 {
   background-color: #005f99;
   width: 100%;
