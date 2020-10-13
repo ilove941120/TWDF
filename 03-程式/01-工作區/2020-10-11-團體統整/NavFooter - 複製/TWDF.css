@@ -305,16 +305,9 @@ footer .FooterFrame .FooterRow .FooterRowL {
 
 @media (max-width: 767.98px) {
   footer .FooterFrame .FooterRow .FooterRowL {
-    margin-top: 0;
+    margin-top: 20px;
     padding-left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-right: 0;
   }
 }
 
@@ -328,6 +321,10 @@ footer .FooterFrame .FooterRow .FooterRowL .FooterTWDF-Title {
   margin-bottom: 9px;
 }
 
+footer .FooterFrame .FooterRow .FooterRowL .FooterTWDF-Title p {
+  font-family: 'Cantarell', sans-serif;
+}
+
 footer .FooterFrame .FooterRow .FooterRowM {
   margin-top: 122px;
   padding-left: 68px;
@@ -337,6 +334,7 @@ footer .FooterFrame .FooterRow .FooterRowM {
   footer .FooterFrame .FooterRow .FooterRowM {
     margin-top: 0;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
