@@ -21,6 +21,122 @@
 
 
 
+
+        /* -------作品內容--------- */
+
+        .PR_main{
+            display: flex;
+        }
+        .pr_main_l{
+            width: 20%;
+            /* background-color: rgb(233, 186, 148); */
+        }
+        .pr_l_side{
+            width: 100%;
+            height: auto;
+            background-color: rgb(233, 186, 148);
+            margin: auto;
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .pr_s_myphoto{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 10px;
+
+            border-radius: 50%;
+            background-color: rgb(31, 0, 0);
+        }
+
+        .pr_s_name{
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            /* background-color: burlywood; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .pr_s_community{
+            width: 80%;
+            margin: auto;
+            /* background-color: coral; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .pr_c_fb{
+            width: 40px;
+            height: 40px;   
+            border-radius: 50%;
+            background-color: blue;
+        }
+        .pr_c_ig{
+            width: 40px;
+            height: 40px;   
+            background-color: red;
+        }
+        .pr_c_pinterest{
+            width: 40px;
+            height: 40px;  
+            border-radius: 50%;
+            background-color:green;
+        }
+
+        .pr_s_skill_G{
+            width: 80%;
+            padding: 10px;
+            height: auto;
+            margin: auto;
+            /* background-color: indianred; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+
+        .pr_s_skill{
+            display: inline;
+            margin: auto;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-shadow: 4px 4px 3px rgba(20%, 20%, 40%, 0.5);
+            background-color: rgb(224, 255, 194);
+        }
+
+        .pr_s_connection{
+            width: 50%;
+            height: 40px;
+            font-size: 18px;
+            border:double white;
+            letter-spacing: 3px;
+            border-radius: 10px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(223, 54, 104);
+        }
+        .pr_s_favorite{
+            display: inline;
+            margin: auto;
+            padding: 10px;
+            /* background-color: royalblue; */
+        }
+
+
+
+
+
+        .pr_main_r{
+            width: 80%;
+            background-color: darkkhaki;
+        }
+
+
         /* --------互動視窗基本設定---------------- */
 
 
@@ -133,7 +249,40 @@
                 </div>
                 <!-- 內容 -->
                 <div class="modal-body">
-                    123
+                    <div class="PR_main">
+                        <div class="pr_main_l">
+                            <div class="pr_l_side">
+                                <div class="pr_s_myphoto"></div>
+                                <div class="pr_s_name"><h5>Daiel</h5></div>
+                                <div class="pr_s_community">
+                                    <div class="pr_c_fb"></div>
+                                    <div class="pr_c_ig"></div>
+                                    <div class="pr_c_pinterest"></div>
+                                </div>
+                                <div class="pr_s_skill_G"><h5>專長</h5>
+                                    <div class="pr_s_skill">#平面設計</div>
+                                    <div class="pr_s_skill">#APP製作</div>
+                                    <div class="pr_s_skill">#影片剪輯</div>
+                                    <div class="pr_s_skill">#商業娛樂</div>
+
+    
+                                </div>
+                                <div class="pr_s_connection">聯絡報價</div>
+                                <div class="pr_s_favorite">收藏</div>
+                            </div>
+                        </div>
+                        
+                        <div class="pr_main_r">
+                            <div class="pr_r_side">
+                                <div class="pr_s_work_img"></div>
+                                <div class="pr_w_name"></div>
+                                <div class="pr_w_description">
+                                    <div class="pr_w_d_title"></div>
+                                    <div class="pr_w_d_content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
